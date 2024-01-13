@@ -1,0 +1,32 @@
+/*   Web  Contactos*/
+.contain__main {
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #b7dafb; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacto__maps {
+    display: flex;
+    height: 850px;
+}
+
+.contain__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.title_contain {
+    font-weight: bolder;
+    font-style: normal;
+    text-align: center;
+}
+
+.maps {
+    margin: auto;
+    border-radius: 20px;
+}
