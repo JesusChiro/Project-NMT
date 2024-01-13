@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="gb18030">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMT</title>
+    <link rel="stylesheet" href="./css/style-footer.css">
+    <link rel="stylesheet" href="./css/mediqueries.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./img/icons/wifi-signal.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="c-body">
+
+    <header class="header">
+        <div class="container__header">
+            <div class="header__logo"><a href="./index.html">
+                    <img src="./img/logo.png" alt="" /></a>
+            </div>
+            <nav class="header__nav" id="nav">
+                <ul class="header__links">
+                    <li class="header__link"><a href="./aboutus.html">About Us</a></li>
+                    <li class="header__link"><a href="./ourservices.html">Our Services</a></li>
+                    <li class="header__link"><a href="./ourcustomers.html">Main Customers</a></li>
+                    <li class="header__link"><a href="./contactus.html">Contactain Us</a></li>
+                </ul>
+            </nav>
+            <div class="header__logo-menu" id="cerrar">
+                <i class="fa-sharp fa-solid fa-bars fa-2xl" style="color: #f4f0f0;"></i>
+            </div>
+
+        </div>
+    </header>
+    <main class="c-main">
+        <h1 class="title_contain display-4 justify-content-center p-4">Formulario de Contacto</h1>
+        <div class="contain__item container-fluid p-4">
+            <div class="row justify-content-center">
+                <div class="col-md-18 pt-4 pb-4 m-0 shadow rounded-4">
+                    <form class="contain_form" action="https://formsubmit.co/dchiroque@nmtelecom.pe" method="POST"
+                        enctype="multipart/form-data">
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label" for="">Nombres:</label>
+                            <div class="col-sd-10">
+                                <input type="text" class="form-control" placeholder="Put your full name" name="name" />
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-form-label" for="">Nro de Celular:</label>
+                            <div class="col-sd-10">
+                                <input type="text" class="form-control" placeholder="Put your cellphone"
+                                    name="cellphone" />
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="input-email" class="form-label">Email Address:</label>
+                            <input id="input-email" type="text" class="form-control" placeholder="someone@gmail.com"
+                                name="email">
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label" for="">Company:</label>
+                            <div class="col-sd-10">
+                                <input type="text" class="form-control" placeholder="Write your company"
+                                    name="company" />
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label" for="">RUC:</label>
+                            <div class="col-sd-10">
+                                <input type="text" class="form-control" placeholder="Write your RUC" name="ruc" />
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="texto-descripcion">Detalle su solicitud:</label>
+                            <textarea class="form-control" name="subject" id="texto-descripcion" cols="30"
+                                rows="10"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Subir imagen referencia</label>
+                            <input type="file" class="form-control" name="attachment" accept="image/png, image/jpeg">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactus.html">
+                        <input type="hidden" name="_cc" value="nmunoz@nmtelecom.pe">
+                        <input type="hidden" name="_template" value="table">
+                    </form>
+                </div>
+            </div>
+            <div class=" col-md-4 pt-4 shadow rounded-4 contacto__maps">
+                <iframe class="maps"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15606.043073718743!2d-77.09098035!3d-12.0771453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spe!4v1680884679882!5m2!1sen!2spe"
+                    width="450" height="800" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__right">
+                <div class="footer__logo"><a href="./index.html"><img alt="nmtelecom logo" src="./img/logo.png" /></a>
+                </div>
+                <div class="footer__texto">
+                    <p>Calle Enrique Cipriani 266, La Victoria</p>
+                    <p>Cel: 954-193-884</p>
+                    <p>Cel: 995-863-645</p>
+                    <p>E-mail: <a
+                            href="mailto:info@nmtelecom.pe?Subject=Solicito%20cotizacion%20del%20servicio%20de">info@nmtelecom.pe</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer__rrss">
+                <h4>Nuestras Redes Sociales</h4>
+                <div class="footer-icon">
+                    <a class="whatsapp-btn"
+                        href="https://wa.me/+51995863645?text=Hola%20quisiera%20informacion%20sobre%20los%20servicios%20que%20brindan"
+                        target="_blank">
+                        <img alt="whatsapp telecom" class="btnwsp" src="././img/iconwp1.png" />
+                    </a>
+                    <a href="https://www.facebook.com/nmtelecom.pe/">
+                        <img alt="facebook telecom" class="footer__fb" src="./img/icons/facebook.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
