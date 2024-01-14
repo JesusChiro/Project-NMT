@@ -1,38 +1,27 @@
 import './Navbar.css'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-
-
-export function Navbar() {
+export function Navbarr() {
     return (
         <>
-            <header className="header">
-                <div className="container__header">
-                    <div className="header__logo">
-                        <a href="./index.html"
-                        ><img alt="nmtelecom" src="./img/logo.png"
-                            /></a>
-                    </div>
-
-                    <nav className="header__nav" id="nav">
-                        <ul className="header__links">
-                            <li className="header__link">
-                                <a className="#aboutus" id="linknav">About Us</a>
-                            </li>
-                            <li className="header__link">
-                                <a href="#services" id="linknav2">Our Services</a>
-                            </li>
-                            <li className="header__link">
-                                <a href="#customers" id="linknav3">Main Customers</a>
-                            </li>
-                            <li className="header__link">
-                                <a href="./contactus.html" id="linknav4">Contactain Us</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <div className="header__logo-menu" id="cerrar"></div>
-                </div>
-            </header>
+            <Navbar expand="lg" className="bg-body-primary">
+                <Container className="header">
+                    <Navbar.Brand href="#home">
+                        <img className="header__logo" src='./img/logo.png' />
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" className='toogle' />
+                    <Navbar.Collapse id="basic-navbar-nav"  >
+                        <Nav className="me-auto header__links">
+                            <Nav.Link className="header__link" href="#aboutus">Nosotros</Nav.Link>
+                            <Nav.Link className="header__link" href="#services">Nuestros Servicios</Nav.Link>
+                            <Nav.Link className="header__link" href="#customers">Nuestros Clientes</Nav.Link>
+                            <Nav.Link className="header__link" href="#services">Contacto</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </>
     )
 }
