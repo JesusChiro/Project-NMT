@@ -61,7 +61,8 @@
     }
 
     .header__logo {
-        width: fit-content;
+        width: 200px;
+        height: 150px;
         padding-left: 10%
     }
 
@@ -294,7 +295,8 @@
     }
 
     .header__logo {
-        width: fit-content;
+        width: 200px;
+        height: 150px;
         padding-left: 0%
     }
 
@@ -578,7 +580,7 @@
     }
 
     .header__logo {
-        width: fit-content;
+        
         padding-left: 0%
     }
 
@@ -993,7 +995,6 @@
     }
 
     .header__logo {
-        width: fit-content;
         padding-left: 0%
     }
 
@@ -1413,7 +1414,7 @@
     }
 
     .header__logo {
-        width: fit-content;
+        
         padding-left: 0%
     }
 

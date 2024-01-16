@@ -10,8 +10,8 @@
 }
 
 .header__logo {
-    width: fit-content;
-    padding-left: 65%
+    width: 200px;
+    height: 150px;
 }
 
 .header__nav {
