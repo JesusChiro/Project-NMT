@@ -1,4 +1,4 @@
-import { Link } from '../../../Link.jsx'
+import { Link } from '../../Link.jsx'
 
 import './Navbar.css'
 import Container from 'react-bootstrap/Container';
@@ -16,10 +16,10 @@ export function Navbarr() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" className='toogle' />
                     <Navbar.Collapse id="basic-navbar-nav"  >
                         <Nav className="me-auto header__links">
-                            <Link className="header__link" href="/about">Nosotros</Link>
-                            <Nav.Link className="header__link" href="#services">Nuestros Servicios</Nav.Link>
-                            <Nav.Link className="header__link" href="#customers">Nuestros Clientes</Nav.Link>
-                            <Link className="header__link" href="/contact">Contacto</Link>
+                            <Link className="header__link" href="/nosotros">Nosotros</Link>
+                            <Link className="header__link" href="/servicios">Nuestros Servicios</Link>
+                            <Link className="header__link" href="/clientes">Nuestros Clientes</Link>
+                            <Link className="header__link" href="/contacto">Contacto</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

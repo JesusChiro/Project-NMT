@@ -1,12 +1,12 @@
 import { Footer } from "../Footer/Footer";
 import { Navbarr } from "../Navbar/Navbar";
-
-export function AboutUs() {
+export function Services() {
     return (
         <>
             <Navbarr />
-            <h1>About Us</h1>
+            <h1>Servicios</h1>
             <Footer />
         </>
+
     )
 }

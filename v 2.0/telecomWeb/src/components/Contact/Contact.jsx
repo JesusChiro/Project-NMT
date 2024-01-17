@@ -1,6 +1,6 @@
 import './Contact.css'
-import { Navbarr } from "../Home/Navbar/Navbar";
-import { Footer } from '../Home/Footer/Footer';
+import { Navbarr } from "../Navbar/Navbar";
+import { Footer } from '../Footer/Footer.jsx';
 
 
 export function Contact() {
