@@ -17,7 +17,7 @@ export function Navbarr() {
                     <Navbar.Collapse id="basic-navbar-nav"  >
                         <Nav className="me-auto header__links">
                             <Link className="header__link" href="/nosotros">Nosotros</Link>
-                            <Link className="header__link" href="/servicios">Nuestros Servicios</Link>
+                            <Link className="header__link" href="/soluciones">Soluciones</Link>
                             <Link className="header__link" href="/clientes">Nuestros Clientes</Link>
                             <Link className="header__link" href="/contacto">Contacto</Link>
                         </Nav>

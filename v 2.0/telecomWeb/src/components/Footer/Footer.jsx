@@ -1,5 +1,9 @@
 import './Footer.css'
 
+
+var today = new Date();
+var year = today.getFullYear()
+
 export function Footer() {
     return (
         <>
@@ -26,6 +30,7 @@ export function Footer() {
                                 >info@nmtelecom.pe</a
                                 >
                             </p>
+                            <p>©Copiright NM TELECOM 2013 - {year}</p>
                         </div>
                     </div>
 
