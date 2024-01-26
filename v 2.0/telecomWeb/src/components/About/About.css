@@ -1,0 +1,19 @@
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+}
+
+/* .about-us-img {} */
+
+.about-us-text {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    background-color: aqua;
+
+}

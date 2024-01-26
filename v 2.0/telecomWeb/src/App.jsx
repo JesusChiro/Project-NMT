@@ -8,7 +8,7 @@ import { Router } from './Router.jsx'
 import { Route } from './Route.jsx'
 import Page404 from './components/404.jsx'
 import SearchPage from './components/Search.jsx'
-import './styles.css'
+// import './styles.css'
 // const Home = lazy(() => import('./components/Home/Home.jsx'))
 // // const LazyAboutUs = lazy(() => import('./components/About/About.jsx'))
 // // const LazyContactUs = lazy(() => import('./components/Contact/Contact.jsx'))

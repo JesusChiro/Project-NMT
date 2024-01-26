@@ -1,6 +1,6 @@
 import { Footer } from "../Footer/Footer.jsx";
 import { Navbarr } from "../Navbar/Navbar.jsx";
-
+import './Customers.css'
 export function Customers() {
     return (
         <>

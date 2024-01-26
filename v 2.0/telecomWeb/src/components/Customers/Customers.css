@@ -1,0 +1,30 @@
+.accordion {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion-item {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 1000px;
+    background-color: #19bff1;
+}
+
+.accordion-body {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #19bff1;
+}
+
+.img__logo {
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
