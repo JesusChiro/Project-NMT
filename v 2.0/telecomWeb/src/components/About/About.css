@@ -12,8 +12,8 @@
 /* .about-us-img {} */
 
 .about-us-text {
-    margin-top: 10%;
+    margin-top: 2%;
     margin-bottom: 2%;
     background-color: aqua;
-
+    font-family: "Work Sans", sans-serif;
 }

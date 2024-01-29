@@ -65,18 +65,18 @@
 }
 
 .slide-h1 {
-    font-family: "Roboto";
+    /* font-family: "Roboto"; */
     font-size: 70px;
 }
 
 .slide-h2 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
     font-size: 30px;
     text-align: left;
 }
 
 .slide-p {
-    font-family: "Roboto";
+    /* font-family: "Roboto"; */
     font-size: 20px;
     text-align: justify;
 }

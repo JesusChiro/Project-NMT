@@ -32,7 +32,7 @@
     font-size: 3rem;
     color: white;
     text-align: center;
-    font-family: "Niconne", cursive;
+    /* font-family: "Niconne", cursive; */
     font-weight: 700;
     text-shadow: #b7dafb;
 }
@@ -49,7 +49,7 @@
     text-align: justify;
     font-size: 24px;
     font-weight: 700;
-    font-family: "Roboto";
+    /* font-family: "Roboto"; */
     color: white;
 }
 
@@ -63,7 +63,7 @@
     font-size: 3rem;
     text-align: center;
     color: #fcedd8;
-    font-family: "Niconne", cursive;
+    /* font-family: "Niconne", cursive; */
     font-weight: 700;
     text-shadow: #b7dafb;
 }
@@ -123,7 +123,7 @@
 }
 
 .title {
-    font-family: "Lucida Sans";
+    /* font-family: "Lucida Sans"; */
     font-size: 40px;
     border-style: outset;
 }
