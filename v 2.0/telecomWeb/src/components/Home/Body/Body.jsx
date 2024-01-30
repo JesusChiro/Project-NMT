@@ -25,35 +25,53 @@ const ABOUTUS = [
 ]
 const CUSTOMERS = [
     {
+        Id: '1',
         Img: './img/index/customers/csj.jpg',
         Alt: 'Cliente de NM TELECOM - Poder Judicial Lima Norte '
     },
     {
+        Id: '2',
         Img: './img/index/customers/incor.png',
         Alt: 'Cliente de NM TELECOM - Instituto Nacional Cardiológico'
     },
     {
+        Id: '3',
         Img: './img/index/customers/weir.png',
         Alt: 'Cliente de NM TELECOM - Weir Mineral Perú - VULCO Perú'
     }, {
+        Id: '4',
         Img: './img/index/customers/essalud.png',
         Alt: 'Cliente de NM TELECOM - Seguro Social de Salud'
     },
     {
+        Id: '5',
         Img: './img/index/customers/unp.png',
         Alt: 'Cliente de NM TELECOM - Poder Judicial Lima Norte '
     },
     {
+        Id: '6',
+        Img: './img/index/customers/csj.jpg',
+        Alt: 'Cliente de NM TELECOM - Poder Judicial Lima Norte '
+    },
+    {
+        Id: '7',
         Img: './img/index/customers/incor.png',
         Alt: 'Cliente de NM TELECOM - Instituto Nacional Cardiológico'
     },
     {
+        Id: '8',
         Img: './img/index/customers/weir.png',
         Alt: 'Cliente de NM TELECOM - Weir Mineral Perú - VULCO Perú'
     }, {
+        Id: '9',
         Img: './img/index/customers/essalud.png',
         Alt: 'Cliente de NM TELECOM - Seguro Social de Salud'
     },
+    {
+        Id: '10',
+        Img: './img/index/customers/unp.png',
+        Alt: 'Cliente de NM TELECOM - Poder Judicial Lima Norte '
+    }
 ]
 const PROVIDERS = [
     {
@@ -69,29 +87,20 @@ const PROVIDERS = [
         Alt: 'Proveedor de NM TELECOM - ANIXTER '
     },
     {
-        Img: './img/index/proveedores/intcomex.png',
-        Alt: 'Proveedor de NM TELECOM - INTCOMEX '
-    },
-    {
-        Img: './img/index/proveedores/sego.png',
-        Alt: 'Proveedor de NM TELECOM - SEGO '
-    },
-    {
-        Img: './img/index/proveedores/anixter.png',
-        Alt: 'Proveedor de NM TELECOM - ANIXTER '
+        Img: './img/index/proveedores/perfection.svg',
+        Alt: 'Proveedor de NM TELECOM - Perefection '
     },
 ]
 export function Body() {
     return (
         <>
             <main>
-                <a name="aboutus"></a>
                 <h2 className="title-about">Sobre Nosotros</h2>
                 <section className="section-quienessomos">
                     {
                         ABOUTUS.map(({ Img, Title, Description }) => (
                             <div className="card-b border-secondary shadow rounded-4" key={Img}>
-                                <img alt="..." className="img-card" src={Img}/>
+                                <img alt="..." className="img-card" src={Img} />
                                 <div className="card-body">
                                     <h2 className="card-title title__card">{Title}</h2>
                                     <p className="card-text parrafo__card">{Description}</p>
@@ -101,26 +110,26 @@ export function Body() {
                     }
                 </section>
                 {/* <!-- slider 2 - marcas de clientes --> */}
-                <a name="customers"></a>
                 <section className="c-clientes">
                     <h2 className="title-about">Nuestros Principales Clientes</h2>
-                    <div className="carrusel-clientes">
-                        <div className="carrusel--">
+                    <div className="slider">
+                        <div className="slidertrack">
                             {
-                                CUSTOMERS.map(({ Img, Alt }) => (
-                                    <div className="carrusel-img" key={Img}>
+                                CUSTOMERS.map(({ Img, Alt,Id }) => (
+                                    <div className="slide" key={Id}>
                                         <img alt={Alt} className="img-cus" src={Img} />
                                     </div>
                                 ))
                             }
                         </div>
                     </div>
+
                     <h3 className="title-about">Nuestros Principales Proveedores</h3>
-                    <div className="carrusel-clientes">
-                        <div className="carrusel--">
+                    <div className="slider">
+                        <div className="slidertrack">
                             {
                                 PROVIDERS.map(({ Img, Alt }) => (
-                                    <div className="carrusel-img" key={Img}>
+                                    <div className="slide" key={Img}>
                                         <img alt={Alt} className="img-cus" src={Img} />
                                     </div>
                                 ))

@@ -57,84 +57,41 @@
 /***/
 /***/
 /*carrusel de clientes - inicio*/
-.c-clientes {
-    margin-bottom: 50px;
-    border-style: 20px;
-    font-size: 3rem;
-    text-align: center;
-    color: #fcedd8;
-    /* font-family: "Niconne", cursive; */
-    font-weight: 700;
-    text-shadow: #b7dafb;
-}
-
-.carrusel-clientes {
-    width: 1300px;
+.slider {
+    width: 75vw;
     height: auto;
+    margin: auto;
     overflow: hidden;
+
 }
 
-.carrusel-- {
+.slider .slidertrack {
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.carrusel-clientes .carrusel-- {
-    display: flex;
-    animation: scroll 60s linear infinite;
+    animation: scroll 40s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
-    width: calc(200px * 14);
+    width: calc(400px * 10);
+    gap: 5%;
+    margin-bottom: 2em;
 }
 
-.carrusel-clientes .carrusel-img {
-    width: 300px;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
+.slider .slide {
+    width: 400px;
 
-.carrusel-clientes .carrusel-img img {
+    height: min-content;
+}
+.slider .slide img{
     width: 100%;
 }
 
-@keyframes scroll {
+@keyframes scroll{
     0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
-
     100% {
-        -webkit-transform: translateX(calc(-200px * 7));
-        transform: translateX(calc(-200px * 7));
+        -webkit-transform: translateX(calc(-400px * 5));
+        transform: translateX(calc(-400px * 5));
     }
-}
-
-/*carrusel de clientes  - final*/
-/***/
-/***/
-/***/
-/***/
-/*footer - inicio*/
-
-/*Web Servicios*/
-.card-img-top {
-    width: 350px;
-    height: 280px;
-}
-
-.title {
-    /* font-family: "Lucida Sans"; */
-    font-size: 40px;
-    border-style: outset;
-}
-
-.title__card {
-    text-align: center;
-    padding-bottom: 10px;
-    text-shadow: 2px 2px 3px #0b486b;
-}
-
-.parrafo__card {
-    text-align: justify;
-    color: black;
 }
