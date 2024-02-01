@@ -1,23 +1,29 @@
 /***/
 /*Quienes somos - inicio*/
 .section-quienessomos {
-    width: 1200px;
+    /* width: 90vw; */
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-items: center;
     align-content: center;
-    padding: 55px;
-    gap: 20px;
+    padding: 25px;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.about-nosotros {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
 
 .card-b {
-    margin: 0;
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 30vw;
     max-width: 400px;
     padding: 20px;
 }
@@ -29,10 +35,10 @@
 .title-about {
     margin-bottom: 50px;
     border-style: 20px;
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
-    text-align: center;
-    /* font-family: "Niconne", cursive; */
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 700;
     text-shadow: #b7dafb;
 }
@@ -45,11 +51,10 @@
     text-shadow: 2px 2px 3px white;
 }
 
-.parrafo__card {
+.card-text {
     text-align: justify;
     font-size: 24px;
-    font-weight: 700;
-    /* font-family: "Roboto"; */
+    font-weight: 400;
     color: white;
 }
 
@@ -81,15 +86,17 @@
 
     height: min-content;
 }
-.slider .slide img{
+
+.slider .slide img {
     width: 100%;
 }
 
-@keyframes scroll{
+@keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
+
     100% {
         -webkit-transform: translateX(calc(-400px * 5));
         transform: translateX(calc(-400px * 5));

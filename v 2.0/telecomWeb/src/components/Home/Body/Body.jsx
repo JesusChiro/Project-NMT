@@ -18,7 +18,8 @@ const ABOUTUS = [
     },
     {
         Img: 'https://i.postimg.cc/jdyhWQTy/ourvision.png',
-        Title: 'Visión de la empresa NM TELECOM',
+        Title: 'Nuestra Visión',
+        Alt: 'Visión de la empresa NM TELECOM',
         Description: `Ser la primera opcion de nuestros clientes en servicios en Redes de Telecomunicaciones, Fibra óptica, Centrales Telefónicas, Sistemas Eléctricos, Sistemas de puesta
         a tierra y otras actividades afines. Líder en el medio, reconocida por su calidad de servicio, atención  personalizada y oportuna.`
     }
@@ -94,50 +95,51 @@ const PROVIDERS = [
 export function Body() {
     return (
         <>
-            <main>
+            <section className="section-quienessomos">
                 <h2 className="title-about">Sobre Nosotros</h2>
-                <section className="section-quienessomos">
+                <div className="about-nosotros">
                     {
                         ABOUTUS.map(({ Img, Title, Description }) => (
                             <div className="card-b border-secondary shadow rounded-4" key={Img}>
-                                <img alt="..." className="img-card" src={Img} />
-                                <div className="card-body">
-                                    <h2 className="card-title title__card">{Title}</h2>
-                                    <p className="card-text parrafo__card">{Description}</p>
-                                </div>
+                                <img alt="Sobre Nosotros NM Telecom" className="img-card" src={Img} />
+                                <h2 className="title__card">{Title}</h2>
+                                <p className="card-text">{Description}</p>
                             </div>
                         ))
                     }
-                </section>
-                {/* <!-- slider 2 - marcas de clientes --> */}
-                <section className="c-clientes">
-                    <h2 className="title-about">Nuestros Principales Clientes</h2>
-                    <div className="slider">
-                        <div className="slidertrack">
-                            {
-                                CUSTOMERS.map(({ Img, Alt,Id }) => (
-                                    <div className="slide" key={Id}>
-                                        <img alt={Alt} className="img-cus" src={Img} />
-                                    </div>
-                                ))
-                            }
-                        </div>
-                    </div>
+                </div>
 
-                    <h3 className="title-about">Nuestros Principales Proveedores</h3>
-                    <div className="slider">
-                        <div className="slidertrack">
-                            {
-                                PROVIDERS.map(({ Img, Alt }) => (
-                                    <div className="slide" key={Img}>
-                                        <img alt={Alt} className="img-cus" src={Img} />
-                                    </div>
-                                ))
-                            }
-                        </div>
+            </section>
+
+            <section className="section-quienessomos">
+                <h2 className="title-about">Nuestros Principales Clientes</h2>
+                <div className="slider">
+                    <div className="slidertrack">
+                        {
+                            CUSTOMERS.map(({ Img, Alt, Id }) => (
+                                <div className="slide" key={Id}>
+                                    <img alt={Alt} className="img-cus" src={Img} />
+                                </div>
+                            ))
+                        }
                     </div>
-                </section>
-            </main>
+                </div>
+            </section>
+
+            <section className="section-quienessomos">
+                <h2 className="title-about">Nuestros Principales Proveedores</h2>
+                <div className="slider">
+                    <div className="slidertrack">
+                        {
+                            PROVIDERS.map(({ Img, Alt }) => (
+                                <div className="slide" key={Img}>
+                                    <img alt={Alt} className="img-cus" src={Img} />
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </section >
         </>
     )
 }

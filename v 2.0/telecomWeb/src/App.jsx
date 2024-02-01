@@ -25,13 +25,13 @@ export function App() {
     <>
       <div className='allWeb'>
         <Suspense fallback={<p>Cargando....</p>}>
-          <Router routes={appRoutes} defaultComponent={Page404}>
-            <Route path='/' Component={Home} />
-            <Route path='/nosotros' Component={AboutUs} />
-            <Route path='/contacto' Component={Contact} />
-            <Route path='/soluciones' Component={Services} />
-            <Route path='/clientes' Component={Customers} />
-          </Router >
+            <Router routes={appRoutes} defaultComponent={Page404}>
+              <Route path='/' Component={Home} />
+              <Route path='/nosotros' Component={AboutUs} />
+              <Route path='/contacto' Component={Contact} />
+              <Route path='/soluciones' Component={Services} />
+              <Route path='/clientes' Component={Customers} />
+            </Router >
         </Suspense >
       </div>
     </>

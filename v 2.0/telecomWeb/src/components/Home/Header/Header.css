@@ -1,20 +1,3 @@
-/*main - inicio*/
-
-.c-main {
-    max-width: 1300px;
-    width: 1300px;
-    display: flex;
-    padding-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-/*main - final*/
-/***/
-/***/
-/***/
 /***/
 /*carrusel de servicios - inicio*/
 #slider {
@@ -26,6 +9,7 @@
 
 .slide {
     height: 600px;
+
 }
 
 #slides {
@@ -48,8 +32,8 @@
 .slide-content {
     display: flex;
     flex-direction: row;
-    align-items: start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     width: 1300px;
     padding-top: 0;
     margin-top: 0;
@@ -60,13 +44,14 @@
     flex-direction: column;
     gap: 40px;
     width: 50%;
-    padding-left: 25px;
+    padding-left: 4em;;
     padding-right: 25px;
 }
 
 .slide-h1 {
     /* font-family: "Roboto"; */
-    font-size: 70px;
+    font-size: 60px;
+    font-weight: 700;
 }
 
 .slide-h2 {
@@ -140,6 +125,8 @@
 .img-slide-services {
     width: 400px;
     filter: drop-shadow(30px 10px 4px rgba(66, 21, 21, 0.345));
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #slider {
