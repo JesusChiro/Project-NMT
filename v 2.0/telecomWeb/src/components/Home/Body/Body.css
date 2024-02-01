@@ -1,7 +1,6 @@
 /***/
 /*Quienes somos - inicio*/
 .section-quienessomos {
-    /* width: 90vw; */
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -11,7 +10,8 @@
     gap: 15px;
     margin-left: auto;
     margin-right: auto;
-
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .about-nosotros {
@@ -63,32 +63,38 @@
 /***/
 /*carrusel de clientes - inicio*/
 .slider {
-    width: 75vw;
-    height: auto;
-    margin: auto;
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-
 }
 
 .slider .slidertrack {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: scroll 40s linear infinite;
+    animation: scroll 60s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
-    width: calc(400px * 10);
-    gap: 5%;
-    margin-bottom: 2em;
+    width: calc(200px * 14);
 }
 
 .slider .slide {
     width: 400px;
-
     height: min-content;
 }
 
 .slider .slide img {
-    width: 100%;
+    width: 194px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-cus {
+    width: 194px;
+    height: auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 @keyframes scroll {
@@ -98,7 +104,7 @@
     }
 
     100% {
-        -webkit-transform: translateX(calc(-400px * 5));
-        transform: translateX(calc(-400px * 5));
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
     }
 }

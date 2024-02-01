@@ -8,9 +8,9 @@ export function AboutUs() {
             <Navbarr />
             <div className="about-us-container">
                 <h1 className="title">Sobre Nosotros</h1>
-                <div className="about-us-img">
+                {/* <div className="about-us-img">
                     <img src="./img/aboutus.jpg" />
-                </div>
+                </div> */}
                 <div className="about-us-text">
                     <p>
                         {NMT_INFO.NAME} es un proveedor líder de soluciones de redes innovadoras.

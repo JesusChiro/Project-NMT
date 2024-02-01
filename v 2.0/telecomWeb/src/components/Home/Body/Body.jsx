@@ -72,22 +72,46 @@ const CUSTOMERS = [
         Id: '10',
         Img: './img/index/customers/unp.png',
         Alt: 'Cliente de NM TELECOM - Poder Judicial Lima Norte '
-    }
+    },
 ]
 const PROVIDERS = [
     {
+        Id: '1',
         Img: './img/index/proveedores/intcomex.png',
         Alt: 'Proveedor de NM TELECOM - INTCOMEX '
     },
     {
+        Id: '2',
         Img: './img/index/proveedores/sego.png',
         Alt: 'Proveedor de NM TELECOM - SEGO '
     },
     {
+        Id: '3',
         Img: './img/index/proveedores/anixter.svg',
         Alt: 'Proveedor de NM TELECOM - ANIXTER '
     },
     {
+        Id: '4',
+        Img: './img/index/proveedores/perfection.svg',
+        Alt: 'Proveedor de NM TELECOM - Perefection '
+    },
+    {
+        Id: '5',
+        Img: './img/index/proveedores/intcomex.png',
+        Alt: 'Proveedor de NM TELECOM - INTCOMEX '
+    },
+    {
+        Id: '6',
+        Img: './img/index/proveedores/sego.png',
+        Alt: 'Proveedor de NM TELECOM - SEGO '
+    },
+    {
+        Id: '7',
+        Img: './img/index/proveedores/anixter.svg',
+        Alt: 'Proveedor de NM TELECOM - ANIXTER '
+    },
+    {
+        Id: '8',
         Img: './img/index/proveedores/perfection.svg',
         Alt: 'Proveedor de NM TELECOM - Perefection '
     },
@@ -131,8 +155,8 @@ export function Body() {
                 <div className="slider">
                     <div className="slidertrack">
                         {
-                            PROVIDERS.map(({ Img, Alt }) => (
-                                <div className="slide" key={Img}>
+                            PROVIDERS.map(({ Img, Alt,Id }) => (
+                                <div className="slide" key={Id}>
                                     <img alt={Alt} className="img-cus" src={Img} />
                                 </div>
                             ))

@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Ubuntu';
+
 }
 
 
@@ -23,17 +24,31 @@
             hsl(166deg 67% 60%) 74%,
             hsl(157deg 51% 59%) 82%,
             hsl(147deg 37% 57%) 100%);
-    width: 1440px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+    overflow: hidden;
 
+}
+
+.justbody {
+    /* background-color: forestgreen; */
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
 }
 
 /*Modo Responsive*/
 
 @media screen and (max-width: 1024px) {
     .allWeb {
+        width: 1024px;
+        max-width: 1024px;
+    }
+
+    .justbody {
         width: 1024px;
         max-width: 1024px;
     }
@@ -158,7 +173,7 @@
 
     /*Quienes somos - inicio*/
     .section-quienessomos {
-        width: 95vw;
+        width: 95%;
         gap: 40px;
     }
 
@@ -208,6 +223,13 @@
     /*Quienes somos - final*/
     /**/
     /* Clientes - inicio */
+    .slider {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
     /* Clientes - final */
 
     /*footer - inicio*/
@@ -249,6 +271,11 @@
 @media screen and (max-width: 768px) {
     .allWeb {
         width: 768px;
+    }
+
+    .justbody {
+        width: 768px;
+        max-width: 768px;
     }
 
     .header {
@@ -389,11 +416,19 @@
         height: 350px;
     }
 
+    .slider {
+        width: 80%;
+        margin: 3em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .card-text {
         font-size: 1.4em;
         font-weight: 500;
     }
 
+    /*Fin Quienes Somos*/
     .footer__main {
         margin-left: auto;
         margin-right: auto;
@@ -443,6 +478,11 @@
 @media screen and (max-width: 425px) {
     .allWeb {
         width: 425px;
+    }
+
+    .justbody {
+        width: 425px;
+        max-width: 425px;
     }
 
     .header {
@@ -676,6 +716,11 @@
 @media screen and (max-width: 320px) {
     .allWeb {
         width: 320px;
+    }
+
+    .justbody {
+        width: 320px;
+        max-width: 320px;
     }
 
     .header {

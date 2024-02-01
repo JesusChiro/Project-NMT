@@ -5,15 +5,16 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    padding: 3em;
+    background-image: url('../../../public/img/1.jpg');
 
 }
 
 /* .about-us-img {} */
 
 .about-us-text {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    background-color: aqua;
+    margin-top: 2em;
+    margin-bottom: 2em;
     font-family: "Work Sans", sans-serif;
+    font-size: 2em
 }
