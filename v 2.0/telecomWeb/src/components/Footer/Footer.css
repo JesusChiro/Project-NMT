@@ -3,9 +3,9 @@
     }
 
     .footer__ {
-        padding: 0;
-        margin: 0;
+        display: flex;
     }
+
 
     .footer__main {
         width: 1300px;

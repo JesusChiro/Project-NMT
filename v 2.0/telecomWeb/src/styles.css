@@ -400,6 +400,11 @@
         gap: 0;
     }
 
+    .footer__ {
+        display: flex;
+        flex-direction: column;
+    }
+
     .footer__texto p {
         text-align: center;
     }
