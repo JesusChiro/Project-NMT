@@ -4,8 +4,10 @@
 
     .footer__ {
         display: flex;
+        width: 50%;
+        gap: 5em;
+        /* justify-content:space-between; */
     }
-
 
     .footer__main {
         width: 1300px;
@@ -27,7 +29,7 @@
     }
 
     .footer__texto {
-        margin-left: 1em;
+        margin-left: 0em;
         display: flex;
         flex-direction: column;
     }

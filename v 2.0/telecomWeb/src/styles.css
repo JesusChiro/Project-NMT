@@ -215,6 +215,22 @@
         margin-left: auto;
         margin-right: auto;
         width: 950px;
+        gap: 2em;
+    }
+
+    .footer__ {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        gap: 0.5em;
+    }
+
+    .footer__texto p {
+        padding: 0;
+        margin: 0;
+        font-size: 1em;
     }
 
     .footer__rrss {
@@ -390,6 +406,7 @@
         justify-content: center;
         align-items: center;
         width: 700px;
+        gap: 5em;
         padding-bottom: 0;
     }
 
@@ -417,11 +434,13 @@
     .footer__rrss {
         width: 100%;
         padding: 0.5em 0;
+        gap: 1px;
     }
 
     .footer_copyright {
         font-size: 1em;
         padding-bottom: 1em;
+
     }
 }
 

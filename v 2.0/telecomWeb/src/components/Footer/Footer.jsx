@@ -1,8 +1,8 @@
 import './Footer.css'
-
+import { NMT_INFO } from './../../utils/consts.js'
 
 var today = new Date();
-var year = today.getFullYear()
+var currentYear = today.getFullYear()
 
 export function Footer() {
     return (
@@ -27,32 +27,32 @@ export function Footer() {
                             </p>
                         </div>
                         <div className="footer__rrss">
-                        <h4>Nuestras Redes Sociales</h4>
-                        <div className="footer-icon">
-                            <a
-                                className="whatsapp-btn"
-                                href="https://wa.me/+51967761056?text=Hola%20quisiera%20informacion%20sobre%20los%20servicios%20que%20brindan"
-                                target="_blank"
-                                rel="noreferrer"
-                            ><img
-                                    alt="whatsapp telecom"
-                                    className="btnwsp"
-                                    src="././img/iconwp1.png"
-                                />
-                            </a>
-                            <a href="https://www.facebook.com/nmtelecom.pe/">
-                                <img
-                                    alt="facebook telecom"
-                                    className="footer__fb"
-                                    src="./img/icons/facebook.png"
-                                />
-                            </a>
+                            <h4>Nuestras Redes Sociales</h4>
+                            <div className="footer-icon">
+                                <a
+                                    className="whatsapp-btn"
+                                    href="https://wa.me/+51967761056?text=Hola%20quisiera%20informacion%20sobre%20los%20servicios%20que%20brindan"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                ><img
+                                        alt="whatsapp telecom"
+                                        className="btnwsp"
+                                        src="././img/iconwp1.png"
+                                    />
+                                </a>
+                                <a href="https://www.facebook.com/nmtelecom.pe/">
+                                    <img
+                                        alt="facebook telecom"
+                                        className="footer__fb"
+                                        src="./img/icons/facebook.png"
+                                    />
+                                </a>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <div className='footer_copyright'>
-                    <span>©Copiright NM TELECOM 2013 - {year}</span>
+                    <span>©Copiright NM TELECOM {NMT_INFO.DATE_CREATED} - {currentYear}</span>
                 </div>
             </footer>
         </>
