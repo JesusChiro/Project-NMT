@@ -42,15 +42,15 @@
 
 /*Modo Responsive*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width:1370px) {
     .allWeb {
-        width: 1024px;
-        max-width: 1024px;
+        width: auto;
+        max-width: auto;
     }
 
     .justbody {
-        width: 1024px;
-        max-width: 1024px;
+        width: auto;
+        max-width: auto;
     }
 
     .header {
@@ -65,7 +65,7 @@
     .header__logo {
         width: 200px;
         height: 150px;
-        padding-left: 10%;
+        /* padding-left: 10%; */
     }
 
     .header__links {
@@ -74,7 +74,7 @@
         align-items: center;
         text-decoration: solid;
         font-size: 24px;
-        padding-left: 15%;
+        padding-left: 5%;
         margin: 0;
         width: fit-content;
     }
@@ -268,14 +268,15 @@
     /*footer - fin*/
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .allWeb {
-        width: 768px;
+        width: auto;
+        max-width: auto;
     }
 
     .justbody {
-        width: 768px;
-        max-width: 768px;
+        width: auto;
+        max-width: auto;
     }
 
     .header {
@@ -299,10 +300,10 @@
         padding: 0;
         background-color: #151c2363;
         width: 100%;
-        padding: 0;
-        margin: 0;
     }
-
+.header__link{
+    width: 100%;
+}
     .header__link:hover {
         background-color: #fff;
         color: #151c2363;
@@ -451,6 +452,7 @@
     .footer__ {
         display: flex;
         flex-direction: column;
+        gap: 0;
     }
 
     .footer__texto p {
@@ -492,7 +494,20 @@
     }
 
     .header__links {
+        background-color: aqua;
+        width: 100%;
+        padding: 0;
         font-size: 1.5em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__link {
+        background-color: blueviolet;
+    
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
     .slide {
@@ -615,16 +630,30 @@
         gap: 0;
         width: 350px;
         padding-bottom: 1em;
+
     }
 
     .footer__right {
         padding-bottom: 1em;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__ {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         gap: 1em;
-        width: 350px;
+
     }
 
     .footer__texto p {
         font-size: 1em;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .footer__logo {
