@@ -33,7 +33,6 @@
 }
 
 .justbody {
-    /* background-color: forestgreen; */
     padding: 0;
     margin-left: auto;
     margin-right: auto;
@@ -301,9 +300,11 @@
         background-color: #151c2363;
         width: 100%;
     }
-.header__link{
-    width: 100%;
-}
+
+    .header__link {
+        width: 100%;
+    }
+
     .header__link:hover {
         background-color: #fff;
         color: #151c2363;
@@ -504,7 +505,7 @@
 
     .header__link {
         background-color: blueviolet;
-    
+
         width: 100%;
         align-items: center;
         justify-content: center;
@@ -838,7 +839,10 @@
 
     /* Clientes - final */
     .footer__main {
-        width: 250px;
+        width: 85%;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 0;
     }
 
     .footer__right {
@@ -853,5 +857,12 @@
 
     .footer__texto {
         margin: 1em 0em;
+        padding: 0;
+        font-size: 1em;
+    }
+
+    .footer__texto p {
+        padding: 0;
+        font-size: 1em;
     }
 }

@@ -1,5 +1,5 @@
 import './Body.css'
-import { ABOUTUS, PROVIDERS, CUSTOMERS } from '../../../utils/consts'
+import { ABOUTUS, PROVIDERS, CUSTOMERS } from '../../../utils/consts.js'
 export function Body() {
     return (
         <>

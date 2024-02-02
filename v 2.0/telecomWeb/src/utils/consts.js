@@ -100,7 +100,7 @@ export const ABOUTUS = [
 export const CUSTOMERS = [
     {
         Id: '1',
-        Img: './img/index/customers/csj.jpg',
+        Img: './img/index/customers/csjln.png',
         Alt: 'Cliente de NM TELECOM - Poder Judicial Lima Norte '
     },
     {
@@ -119,30 +119,6 @@ export const CUSTOMERS = [
     },
     {
         Id: '5',
-        Img: './img/index/customers/unp.png',
-        Alt: 'Cliente de NM TELECOM - Poder Judicial Lima Norte '
-    },
-    {
-        Id: '6',
-        Img: './img/index/customers/csj.jpg',
-        Alt: 'Cliente de NM TELECOM - Poder Judicial Lima Norte '
-    },
-    {
-        Id: '7',
-        Img: './img/index/customers/incor.png',
-        Alt: 'Cliente de NM TELECOM - Instituto Nacional Cardiológico'
-    },
-    {
-        Id: '8',
-        Img: './img/index/customers/weir.png',
-        Alt: 'Cliente de NM TELECOM - Weir Mineral Perú - VULCO Perú'
-    }, {
-        Id: '9',
-        Img: './img/index/customers/essalud.png',
-        Alt: 'Cliente de NM TELECOM - Seguro Social de Salud'
-    },
-    {
-        Id: '10',
         Img: './img/index/customers/unp.png',
         Alt: 'Cliente de NM TELECOM - Poder Judicial Lima Norte '
     },
@@ -166,26 +142,6 @@ export const PROVIDERS = [
     },
     {
         Id: '4',
-        Img: './img/index/proveedores/perfection.svg',
-        Alt: 'Proveedor de NM TELECOM - Perefection '
-    },
-    {
-        Id: '5',
-        Img: './img/index/proveedores/intcomex.png',
-        Alt: 'Proveedor de NM TELECOM - INTCOMEX '
-    },
-    {
-        Id: '6',
-        Img: './img/index/proveedores/sego.png',
-        Alt: 'Proveedor de NM TELECOM - SEGO '
-    },
-    {
-        Id: '7',
-        Img: './img/index/proveedores/anixter.svg',
-        Alt: 'Proveedor de NM TELECOM - ANIXTER '
-    },
-    {
-        Id: '8',
         Img: './img/index/proveedores/perfection.svg',
         Alt: 'Proveedor de NM TELECOM - Perefection '
     },
