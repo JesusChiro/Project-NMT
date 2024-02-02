@@ -1,20 +1,99 @@
-.about-us-container {
+.aboutus-container {
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 3em;
-    background-image: url('../../../public/img/1.jpg');
-
+    padding: 0 3em 2em;
+    background-color: rgba(86, 119, 159, 0.407);
 }
 
-/* .about-us-img {} */
+.aboutus-title {
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: bisque;
+    padding-top: 0.5em;
+}
 
-.about-us-text {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    font-family: "Work Sans", sans-serif;
-    font-size: 2em
+.aboutus-subtitle {
+    font-size: 3em;
+    padding-left: 1em;
+    margin: 0.5em 0;
+    background-color: rgb(138, 150, 192);
+    font-weight: 600;
+}
+
+.aboutus-img {
+    margin-bottom: 1em;
+}
+
+.aboutus-p {
+    margin: 0 2em;
+    text-align: justify;
+    color: azure;
+    font-size: 1.2em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .aboutus-container {
+        width: 90%;
+    }
+
+    .aboutus-p {
+        margin: 0 2em;
+        text-align: justify;
+        color: azure;
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+    .aboutus-container {
+        width: 90%;
+        padding: 1em;
+    }
+    .aboutus-title {
+        font-size: 3em;
+    }
+    .aboutus-subtitle {
+        font-size: 2em;
+        padding-left: 0.5em;
+        margin: 0.5em 0;
+        background-color: rgb(138, 150, 192);
+        font-weight: 600;
+    }
+
+    .aboutus-p {
+        margin: 0 0.5em;
+        text-align: justify;
+        color: azure;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .aboutus-container {
+        width: 90%;
+        padding: 1em;
+    }
+    .aboutus-title {
+        font-size: 2em;
+    }
+    .aboutus-subtitle {
+        font-size: 1.5em;
+        padding-left: 0.5em;
+        margin: 0.5em 0;
+        background-color: rgb(138, 150, 192);
+        font-weight: 600;
+    }
+
+    .aboutus-p {
+        margin: 0;
+        text-align: justify;
+        color: azure;
+        font-size: 0.8em;
+    }
 }
