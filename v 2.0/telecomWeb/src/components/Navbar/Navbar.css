@@ -29,10 +29,9 @@
     align-items: center;
     justify-content: center;
     text-decoration: solid;
-    font-size: 24px;
-    padding-left: 10%;
+    font-size: 1.5em;
+    /* padding-left: 10%; */
     padding-right: 0;
-    width: fit-content;
     margin: 0;
 }
 
@@ -42,22 +41,36 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     color: white;
-    padding: 10px 25px;
+    /* background-color: aqua; */
+    padding: 1em 1.5em;
     margin: 0;
-    cursor: pointer;
-    width: 8em;
+
 }
 
 .header__link:hover {
     background-color: rgb(143, 176, 214);
     border-radius: 20%;
     box-sizing: border-box;
-    color:rgb(121, 132, 230);
+    color: rgb(121, 132, 230);
     border-radius: 1em;
 }
-.container{
+
+.container {
     width: auto;
 }
+
 .toogle {
     background: aqua;
+}
+
+@media screen and (min-width: 1024px) and (max-width:1440px) {
+    .header{
+        width: auto !important;
+    }
+    .header__links {
+        padding: 0;
+        margin-right: 10em;
+        /* background-color: beige; */
+        width: 100%;
+    }
 }

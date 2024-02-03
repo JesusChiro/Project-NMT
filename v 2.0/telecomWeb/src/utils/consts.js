@@ -146,3 +146,42 @@ export const PROVIDERS = [
         Alt: 'Proveedor de NM TELECOM - Perefection '
     },
 ]
+
+
+export const CONTACT_US = [
+    {
+        Id: '1',
+        Text: 'Gestión de Proyectos',
+        Alt: 'Management Proyect NM TELECOM',
+        Name: 'Miguel Damián',
+        Email: 'mdamian@nmtelecom.pe',
+        Phone: '954193884',
+        LinkToWsp: 'https://wa.me/+51954193884?text=Hola%Miguel%20mi%20nombre%20es',
+        Icon: './img/index/contact/project.png'
+    },
+    {
+        Id: '2',
+        Text: 'Ventas',
+        Alt: 'Sales NM TELECOM',
+        Name: 'Nilton Muñoz',
+        Email: 'nmunoz@nmtelecom.pe',
+        Phone: '967761056',
+        LinkToWsp: 'https://wa.me/+51967761056?text=Hola%Nilton%20mi%20nombre%20es',
+        Icon: './img/index/contact/estate-agent.png'
+    },
+    {
+        Id: '3',
+        Text: 'Soporte Técnico / Proyectos',
+        Alt: 'Techcnician Support NM TELECOM',
+        Name: 'Daniel',
+        Email: 'dchiroque@nmtelecom.pe',
+        Phone: '995863645',
+        LinkToWsp: 'https://wa.me/+51995863645?text=Hola%Daniel%20mi%20nombre%20es',
+        Icon: './img/index/contact/help-desk.png'
+    },
+]
+
+export const RRSS = [
+    { Id: '1', Alt: 'Whatsapp NM Telecom', Src: './img/icons/wsp.png' },
+    { Id: '2', Alt: 'Facebook NM Telecom', Src: './img/icons/facebook.png' }
+]
