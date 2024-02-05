@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser'
 import { Navbarr } from "../Navbar/Navbar";
 import { Footer } from '../Footer/Footer.jsx';
 import './Contact.css'
-import { CONTACT_US, RRSS } from '../../utils/consts.js';
+import { CONTACT_US } from '../../utils/consts.js';
 
 
 export const Contact = () => {
@@ -40,33 +40,35 @@ export const Contact = () => {
                     </fieldset>
                     <fieldset className='field-message'>
                         <label className="symbol-required name" htmlFor=''>Mensaje:</label>
-                        <textarea maxLength='500' placeholder='Soy Juan Perez de la empresa:....... y deseo información...' name='message' id='' cols='30' rows='' required />
+                        <textarea maxLength='500' placeholder='Soy Juan Perez de la empresa....... y deseo información sobre...' name='message' id='' cols='30' rows='' required />
                     </fieldset>
                     <button className='btn-send'>Send</button>
                 </form>
                 <section className='contact-links'>
+                    <h2 className="contact-link-head">Contacto Directo</h2>
                     {
-                        CONTACT_US.map(({ Id, Text, Name, Email, Phone, LinkToWsp, Icon }) => (
+                        CONTACT_US.map(({ Id, Work, AltWork, IconWork, Name, LinkMail, Email, Phone, LinkToWsp, IconRRSS, AltRRSS }) => (
                             <div className="contact-link-card border-secondary shadow rounded-4" key={Id}>
                                 <aside className="contact-link-right">
-                                    <img alt="" className="contact-link-img" src={Icon} />
+                                    <img alt={AltWork} className="contact-link-img" src={IconWork} />
                                 </aside>
-                                {/* <a href={LinkToWsp} rel="">
-                                    {RRSS.map(({ Id, Alt, Src }) => (
-                                        <img alt={Alt} className="contact-link-rs" src={Src} key={Id} />
-                                    ))}
-                                </a> */}
                                 <section className='contact-link-left'>
-                                    <h2 className="contact-link-text">{Text}</h2>
-                                    <p className="contact-link-text">{Name}</p>
-                                    <p className="contact-link-text">{Email}</p>
-                                    <p className="contact-link-text">{Phone}</p>
+                                    <h2 className="contact-link-title">{Work}</h2>
+                                    <p className="contact-link-text">👨‍💻{Name}</p>
+                                    <p className="contact-link-text">
+                                        <a href={LinkMail}>✉ {Email}</a>
+                                    </p>
+                                    <a href={LinkToWsp}>
+                                        <div className='contact-link-wsp'>
+                                            <img alt={AltRRSS} className="contact-link-rs" src={IconRRSS} key={Id} />
+                                            <p className="contact-link-phone">{Phone}</p>
+                                        </div>
+                                    </a>
                                 </section>
                             </div>
-                        ))
-                    }
-                </section>
-            </div>
+                        ))}
+                </section >
+            </div >
             <Footer />
         </>
     )

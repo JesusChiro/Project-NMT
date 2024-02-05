@@ -151,33 +151,45 @@ export const PROVIDERS = [
 export const CONTACT_US = [
     {
         Id: '1',
-        Text: 'Gestión de Proyectos',
-        Alt: 'Management Proyect NM TELECOM',
+        Work: 'Gestión de Proyectos',
+        AltWork: 'Management Proyect NM TELECOM',
+        IconWork: './img/index/contact/project.png',
         Name: 'Miguel Damián',
+        IconMail: './img/icons/mail.png',
+        LinkMail: 'mailto:mdamian@nmtelecom.pe?Subject=Solicito%20cotizacion%20del%20servicio%20de',
         Email: 'mdamian@nmtelecom.pe',
         Phone: '954193884',
         LinkToWsp: 'https://wa.me/+51954193884?text=Hola%Miguel%20mi%20nombre%20es',
-        Icon: './img/index/contact/project.png'
+        IconRRSS: './img/icons/wsp.png',
+        AltRRSS: 'Whatsapp NM Telecom'
     },
     {
         Id: '2',
-        Text: 'Ventas',
-        Alt: 'Sales NM TELECOM',
+        Work: 'Ventas',
+        AltWork: 'Sales NM TELECOM',
+        IconWork: './img/index/contact/estate-agent.png',
         Name: 'Nilton Muñoz',
+        IconMail: './img/icons/mail.png',
+        LinkMail: 'mailto:nmunoz@nmtelecom.pe?Subject=Solicito%20cotizacion%20del%20servicio%20de',
         Email: 'nmunoz@nmtelecom.pe',
         Phone: '967761056',
         LinkToWsp: 'https://wa.me/+51967761056?text=Hola%Nilton%20mi%20nombre%20es',
-        Icon: './img/index/contact/estate-agent.png'
+        IconRRSS: './img/icons/wsp.png',
+        AltRRSS: 'Whatsapp NM Telecom'
     },
     {
         Id: '3',
-        Text: 'Soporte Técnico / Proyectos',
-        Alt: 'Techcnician Support NM TELECOM',
-        Name: 'Daniel',
+        Work: 'Soporte Técnico / Proyectos',
+        AltWork: 'Techcnician Support NM TELECOM',
+        IconWork: './img/index/contact/help-desk.png',
+        Name: 'Daniel Chiroque',
+        IconMail: './img/icons/mail.png',
+        LinkMail: 'mailto:dchiroque@nmtelecom.pe?Subject=Solicito%20cotizacion%20del%20servicio%20de',
         Email: 'dchiroque@nmtelecom.pe',
         Phone: '995863645',
         LinkToWsp: 'https://wa.me/+51995863645?text=Hola%Daniel%20mi%20nombre%20es',
-        Icon: './img/index/contact/help-desk.png'
+        IconRRSS: './img/icons/wsp.png',
+        AltRRSS: 'Whatsapp NM Telecom'
     },
 ]
 

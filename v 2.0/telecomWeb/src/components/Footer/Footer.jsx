@@ -15,7 +15,6 @@ export function Footer() {
                                 <img alt="nmtelecom logo" src="./img/logo.png" />
                             </a>
                         </div>
-
                     </div>
                     <div className="footer__">
                         <div className="footer__texto">
@@ -37,7 +36,7 @@ export function Footer() {
                                 ><img
                                         alt="whatsapp telecom"
                                         className="btnwsp"
-                                        src="././img/iconwp1.png"
+                                        src="./img/icons/wsp.png"
                                     />
                                 </a>
                                 <a href="https://www.facebook.com/nmtelecom.pe/">
