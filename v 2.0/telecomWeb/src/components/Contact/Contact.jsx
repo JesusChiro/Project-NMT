@@ -4,19 +4,17 @@ import { Navbarr } from "../Navbar/Navbar";
 import { Footer } from '../Footer/Footer.jsx';
 import './Contact.css'
 import { CONTACT_US } from '../../utils/consts.js';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 
 export const Contact = () => {
-
     const refForm = useRef();
-
     const handleSubmit = (event) => {
         event.preventDefault();
-
         const servicesId = 'service_mggtwlp'
         const templateId = 'template_azov3sv'
         const apikey = '048wb8pPNZw5GviLV'
-
         emailjs.sendForm(servicesId, templateId, refForm.current, apikey)
             .then(result => console.log(result.text))
             .catch(error => console.log(error))
@@ -27,25 +25,29 @@ export const Contact = () => {
             <div className='contact-body'>
                 <form ref={refForm} action="" onSubmit={handleSubmit}>
                     <div className="header-contact">
-                        <h2>Contact Us</h2>
-                        <p>Please fill this form</p>
+                        <h2>Contáctanos</h2>
+                        <p>Por favor, rellena el formulario</p>
                     </div>
                     <fieldset className='field-name'>
                         <label className="symbol-required name" htmlFor=''>Nombres Completos:</label>
-                        <input name='username' type="text" placeholder='Ej: Juan Perez' required />
+                        <Form.Control name='username' type="text" placeholder='Ej: Juan Perez' required />
                     </fieldset>
                     <fieldset className='field-email'>
                         <label className="symbol-required name" name='email'>Email:</label>
-                        <input placeholder='Ej: jperez@mail.com' type='email' name='email' id='email' required />
+                        <Form.Control type="email" placeholder="Enter email" name='email' id='email' required />
                     </fieldset>
                     <fieldset className='field-message'>
                         <label className="symbol-required name" htmlFor=''>Mensaje:</label>
-                        <textarea maxLength='500' placeholder='Soy Juan Perez de la empresa....... y deseo información sobre...' name='message' id='' cols='30' rows='' required />
+                        <Form.Control maxLength='500' placeholder='Soy Juan Perez de la empresa... y deseo información 
+                        sobre...' name='message' as="textarea" rows={3} required />
                     </fieldset>
-                    <button className='btn-send'>Send</button>
+                    <Button variant='primary' className='btn-send' type="submit">Send</Button>
                 </form>
                 <section className='contact-links'>
-                    <h2 className="contact-link-head">Contacto Directo</h2>
+                    <div className="contact-link-head">
+                        <h2>Contacto Directo</h2>
+                    </div>
+
                     {
                         CONTACT_US.map(({ Id, Work, AltWork, IconWork, Name, LinkMail, Email, Phone, LinkToWsp, IconRRSS, AltRRSS }) => (
                             <div className="contact-link-card border-secondary shadow rounded-4" key={Id}>

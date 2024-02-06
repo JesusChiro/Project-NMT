@@ -7,34 +7,38 @@
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
 form {
-    width: 30rem;
-    height: 40rem;
+    width: 30em;
+    height: 36.6em;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
-    border: double #808080 5px
+    border-radius: 1em;
+    border: double aqua 5px;
 }
 
 .header-contact {
     width: 100%;
     height: 6rem;
-    background-color: #a0a3a8;
+    background-color: aqua;
 }
 
 .header-contact>h2,
 .header-contact>p {
     color: #021330;
-    text-align: left;
+    /* text-align: left; */
     padding: 0.5rem;
-    font-size: 2rem;
+    font-size: 2em;
     margin: 0;
+}
+
+.header-contact h2 {
+    text-align: center;
 }
 
 .header-contact>p {
@@ -53,18 +57,23 @@ form {
     border-radius: 1em;
 }
 
+.name {
+    color: #ffffff;
+}
+
 .symbol-required::after {
     content: '*';
     color: #ff0000
 }
 
 .field-message {
-    height: 12rem;
+    height: 9em;
 }
 
 .btn-send {
     width: 12rem;
     background-color: #3287f6;
+    margin: 1em;
 }
 
 .btn-send:hover,
@@ -78,9 +87,31 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    /* gap: 2em; */
     margin-right: auto;
     margin-left: auto;
+    border-radius: 1em;
+    border: double aqua 5px;
+    padding: 0em;
+    width: 40%;
+}
+
+.contact-link-head {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+    background-color: aqua;
+    height: 6rem;
+}
+
+.contact-link-head h2 {
+    margin: 0;
+    font-size: 2em;
+    /* font-weight: 700; */
 }
 
 .contact-link-card {
@@ -88,6 +119,7 @@ form {
     flex-direction: row;
     height: 8em;
     width: 22em;
+    margin: 1em;
 }
 
 .contact-link-right {
@@ -96,7 +128,6 @@ form {
     justify-content: center;
     align-items: center;
     width: 25%;
-    /* background-color: #16dd08; */
 }
 
 .contact-link-left {
@@ -144,7 +175,7 @@ form {
     padding: 0;
     position: absolute;
     top: 0px;
-    right: 170px;
+    right: 173px;
 }
 
 .contact-link-rs {
@@ -156,47 +187,135 @@ form {
 @media screen and (max-width:1024px) {
     .contact-body {
         gap: 4em;
+        margin-bottom: 2em;
     }
-    
 }
 
 @media screen and (min-width:768px)and (max-width:1023px) {
     .contact-body {
         gap: 4em;
         flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .contact-links {
-        margin-bottom: 5em;
-    }
-    .contact-link-head {
-        text-align: center;
-        font-weight: 700;
-        font-size: 2em;
-        margin: 0;
-        padding: 0;
-    }
-}
-
-@media screen and (min-width:320px)and (max-width:767px) {
-    .contact-body {
-        flex-direction: column;
-    }
     form {
         width: 100%;
         height: auto;
     }
+
+    .contact-links {
+        margin-bottom: 5em;
+        width: 100%;
+    }
+
+    .contact-link-head {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width:321px)and (max-width:767px) {
+    .contact-body {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 2em;
+        width: 90%;
+    }
+
+    form {
+        width: 100%;
+        height: auto;
+    }
+
+    .header-contact {
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn-send {
+        margin: 1em;
+    }
+
     .contact-links {
         margin: 0 0 5em;
+        width: 100%;
     }
+
     .contact-link-card {
         display: flex;
         flex-direction: row;
         height: 8em;
-        width: 18em;
+        width: 95%;
     }
+
+    .contact-link-head {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+    }
+
     .contact-link-phone {
         top: 0px;
-        right: 125px;
+        right: 65.3%;
+    }
+}
+
+@media screen and (max-width:320px){
+    .contact-body {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 2em;
+        width: 90%;
+    }
+
+    form {
+        width: 100%;
+        height: auto;
+    }
+
+    .header-contact {
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn-send {
+        margin: 1em;
+    }
+
+    .contact-links {
+        margin: 0 0 5em;
+        width: 100%;
+    }
+
+    .contact-link-card {
+        display: flex;
+        flex-direction: row;
+        height: 8em;
+        width: 95%;
+    }
+
+    .contact-link-head {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-link-phone {
+        top: 0px;
+        right: 65%;
+    }
+
+    .contact-link-phone {
+        /* top: 0px; */
+        right: 106px;
     }
 }
