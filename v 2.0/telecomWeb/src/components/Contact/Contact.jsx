@@ -49,7 +49,7 @@ export const Contact = () => {
                     </div>
 
                     {
-                        CONTACT_US.map(({ Id, Work, AltWork, IconWork, Name, LinkMail, Email, Phone, LinkToWsp, IconRRSS, AltRRSS }) => (
+                        CONTACT_US.map(({ Id, Work, AltWork, IconWork, Name, LinkMail, Email, Phone, LinkToWsp }) => (
                             <div className="contact-link-card border-secondary shadow rounded-4" key={Id}>
                                 <aside className="contact-link-right">
                                     <img alt={AltWork} className="contact-link-img" src={IconWork} />
@@ -62,8 +62,7 @@ export const Contact = () => {
                                     </p>
                                     <a href={LinkToWsp}>
                                         <div className='contact-link-wsp'>
-                                            <img alt={AltRRSS} className="contact-link-rs" src={IconRRSS} key={Id} />
-                                            <p className="contact-link-phone">{Phone}</p>
+                                            <p className="contact-link-text">📱{Phone}</p>
                                         </div>
                                     </a>
                                 </section>

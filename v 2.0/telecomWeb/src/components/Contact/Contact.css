@@ -72,13 +72,12 @@ form {
 
 .btn-send {
     width: 12rem;
-    background-color: #3287f6;
     margin: 1em;
 }
 
 .btn-send:hover,
 .btn-send:focus {
-    background-color: #16dd08;
+    background-color: aqua;
     color: #ffffff
 }
 
@@ -168,26 +167,24 @@ form {
     padding: 0;
 }
 
-.contact-link-phone {
-    font-size: 0.9em;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0px;
-    right: 173px;
-}
-
 .contact-link-rs {
     height: 1em;
     padding: 0;
     margin: 0;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (min-width:1024px)and (max-width:1366px) {
     .contact-body {
         gap: 4em;
-        margin-bottom: 2em;
+        margin: 2em auto;
+    }
+
+    .contact-links {
+        width: 50%;
+    }
+
+    .contact-link-card {
+        width: 90%;
     }
 }
 
@@ -207,11 +204,17 @@ form {
 
     .contact-links {
         margin-bottom: 5em;
-        width: 100%;
+        width: 70%;
+        margin: 0 0 1em;
     }
 
     .contact-link-head {
         font-size: 1.5em;
+    }
+
+    .contact-link-phone {
+        top: 0px;
+        right: 71%;
     }
 }
 
@@ -240,8 +243,9 @@ form {
     }
 
     .contact-links {
-        margin: 0 0 5em;
+        margin: 0 0 1em;
         width: 100%;
+
     }
 
     .contact-link-card {
@@ -258,14 +262,9 @@ form {
         margin: 0;
         padding: 0;
     }
-
-    .contact-link-phone {
-        top: 0px;
-        right: 65.3%;
-    }
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width:320px) {
     .contact-body {
         flex-direction: column;
         margin-left: auto;
@@ -312,10 +311,5 @@ form {
     .contact-link-phone {
         top: 0px;
         right: 65%;
-    }
-
-    .contact-link-phone {
-        /* top: 0px; */
-        right: 106px;
     }
 }
