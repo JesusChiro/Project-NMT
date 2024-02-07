@@ -48,21 +48,25 @@ export const Contact = () => {
                     {
                         CONTACT_US.map(({ Id, Work, AltWork, IconWork, Name, LinkMail, Email, Phone, LinkToWsp }) => (
                             <div className="contact-link-card border-secondary shadow rounded-4" key={Id}>
-                                <aside className="contact-link-right">
-                                    <img alt={AltWork} className="contact-link-img" src={IconWork} />
-                                </aside>
-                                <section className='contact-link-left'>
+                                <section>
                                     <h2 className="contact-link-title">{Work}</h2>
-                                    <p className="contact-link-text">👨‍💻{Name}</p>
-                                    <p className="contact-link-text">
-                                        <a href={LinkMail}>✉ {Email}</a>
-                                    </p>
-                                    <a href={LinkToWsp}>
-                                        <div className='contact-link-wsp'>
-                                            <p className="contact-link-text">📱{Phone}</p>
-                                        </div>
-                                    </a>
                                 </section>
+                                <div className='contact-link-body'>
+                                    <section className='contact-link-left'>
+                                        <img alt={AltWork} className="contact-link-img" src={IconWork} />
+                                    </section>
+                                    <aside className="contact-link-right">
+                                        <p className="contact-link-text">👨‍💻{Name}</p>
+                                        <p className="contact-link-text">
+                                            <a href={LinkMail}>✉ {Email}</a>
+                                        </p>
+                                        <a href={LinkToWsp}>
+                                            <div className='contact-link-wsp'>
+                                                <p className="contact-link-text">📱{Phone}</p>
+                                            </div>
+                                        </a>
+                                    </aside>
+                                </div>
                             </div>
                         ))}
                 </section >

@@ -441,6 +441,7 @@
         align-items: center;
         width: 700px;
         gap: 5em;
+        padding: 2em;
         padding-bottom: 0;
     }
 
@@ -459,6 +460,7 @@
 
     .footer__texto p {
         text-align: center;
+        font-size: 1em;
     }
 
     .footer__logo {
@@ -479,14 +481,14 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 425px) and (max-width: 767px) {
     .allWeb {
-        width: 425px;
+        width: 100%;
     }
 
     .justbody {
-        width: 425px;
-        max-width: 425px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .header {
@@ -624,48 +626,69 @@
     }
 
     /* Clientes - final */
+
     .footer__main {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 0;
-        width: 350px;
-        padding-bottom: 1em;
-
-    }
-
-    .footer__right {
-        padding-bottom: 1em;
-        width: 100%;
         justify-content: center;
         align-items: center;
+        gap: 0;
+        padding: 0;
+        padding-bottom: 1em;
+        margin: 0;
+
     }
 
     .footer__ {
+        width: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
         gap: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer__right {
+        width: fit-content;
+        gap: 0;
+        padding: 1em 0;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer__rrss {
+        width: 70%;
+    }
+
+    .footer__texto {
+        margin: 1em 0em;
+        padding: 0;
+        font-size: 1em;
+        width: 90vw;
 
     }
 
     .footer__texto p {
+        padding: 0;
         font-size: 1em;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .footer__logo {
-        margin-bottom: 0em;
-    }
-
-    .footer_copyright {
-        padding-bottom: 1em;
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    .allWeb {
+        width: 100%;
+    }
+
+    .justbody {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .header {
         width: 92%;
         padding: 0;
@@ -722,34 +745,67 @@
     }
 
     /*Quienes somos - fin*/
+    .footer {
+        width: 100%;
+    }
+
     .footer__main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        padding-bottom: 1em;
+        margin: 0;
+
+    }
+
+    .footer__ {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 40px;
+    }
+
+    .footer__right {
+        width: fit-content;
+        gap: 0;
+        padding: 1em 0;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer__rrss {
+        width: 70%;
     }
 
     .footer__texto {
-        margin-top: 1em;
+        margin: 1em 0em;
+        padding: 0;
+        font-size: 1em;
+        width: 90vw;
+
     }
 
     .footer__texto p {
+        padding: 0;
         font-size: 1em;
-        color: #fff;
-    }
-
-    .footer__logo {
-        margin-bottom: 0em;
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
     .allWeb {
-        width: 320px;
+        width: 100%;
     }
 
     .justbody {
-        width: 320px;
-        max-width: 320px;
+        width: 100%
     }
 
     .header {
@@ -830,38 +886,61 @@
 
     /*Quienes somos - fin*/
     /*clientes - inicio*/
-
     .title-about {
         margin-top: 0.5em;
         font-size: 2.2em;
     }
 
-    /* Clientes - final */
+    .footer {
+        width: 100%;
+    }
+
     .footer__main {
-        width: 85%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        padding-bottom: 1em;
+        margin: 0;
+
+    }
+
+    .footer__ {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1em 0;
+        gap: 1em;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer__right {
-        width: 250px;
+        width: fit-content;
         gap: 0;
-        padding: 0;
+        padding: 1em 0;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer__rrss {
-        width: 250px;
+        width: 70%;
     }
 
     .footer__texto {
         margin: 1em 0em;
         padding: 0;
         font-size: 1em;
+        width: 90vw;
+
     }
 
     .footer__texto p {
         padding: 0;
         font-size: 1em;
+        text-align: center;
     }
 }

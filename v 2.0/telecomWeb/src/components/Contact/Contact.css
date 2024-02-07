@@ -113,40 +113,48 @@ form {
 
 .contact-link-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 0.1em;
     height: 8em;
     width: 22em;
     margin: 1em;
+}
+
+.contact-link-body {
+    display: flex;
+    flex-direction: row;
 }
 
 .contact-link-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 25%;
+    margin: 0;
+    padding: 0;
+    gap: 0.3em;
+    width: 75%;
 }
 
 .contact-link-left {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.2em;
+    width: 25%;
+    align-items: center;
+    padding: 1em;
+
 }
 
 .contact-link-title {
     text-align: center;
     font-weight: 700;
-    font-size: 1.2em;
-    margin: 0;
-    padding: 0;
+    font-size: 1.3em;
+    width: 100%;
+    padding-top: 0.3em;
+    margin-bottom: 0;
 }
 
 .contact-link-img {
     width: auto;
     height: 3em;
-
+    margin: 0;
 }
 
 .contact-link-text,
@@ -211,20 +219,15 @@ a {
     .contact-link-head {
         font-size: 1.5em;
     }
-
-    .contact-link-phone {
-        top: 0px;
-        right: 71%;
-    }
 }
 
-@media screen and (min-width:321px)and (max-width:767px) {
+@media screen and (min-width:425px)and (max-width:767px) {
     .contact-body {
+        gap: 4em;
         flex-direction: column;
+        width: 90vw;
         margin-left: auto;
         margin-right: auto;
-        gap: 2em;
-        width: 90%;
     }
 
     form {
@@ -232,35 +235,36 @@ a {
         height: auto;
     }
 
-    .header-contact {
-        font-size: 1em;
-        margin: 0;
-        padding: 0;
+    .contact-links {
+        margin-bottom: 1em;
+        width: 100%;
+        /* margin: 0 0 1em; */
+    }
+}
+
+@media screen and (min-width:321px)and (max-width:424px) {
+    .contact-body {
+        gap: 4em;
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .btn-send {
-        margin: 1em;
+    form {
+        width: 100%;
+        height: auto;
     }
 
     .contact-links {
-        margin: 0 0 1em;
+        margin-bottom: 1em;
         width: 100%;
-
+        /* margin: 0 0 1em; */
     }
-
     .contact-link-card {
         display: flex;
-        flex-direction: row;
         height: 8em;
         width: 95%;
-    }
-
-    .contact-link-head {
-        text-align: center;
-        font-weight: 700;
-        font-size: 1em;
-        margin: 0;
-        padding: 0;
     }
 }
 
@@ -289,15 +293,18 @@ a {
     }
 
     .contact-links {
-        margin: 0 0 5em;
+        margin: 0 0 1em;
         width: 100%;
     }
 
     .contact-link-card {
         display: flex;
-        flex-direction: row;
         height: 8em;
         width: 95%;
+    }
+
+    .contact-link-title {
+        font-size: 1.1em;
     }
 
     .contact-link-head {
@@ -306,10 +313,5 @@ a {
         font-size: 1em;
         margin: 0;
         padding: 0;
-    }
-
-    .contact-link-phone {
-        top: 0px;
-        right: 65%;
     }
 }
