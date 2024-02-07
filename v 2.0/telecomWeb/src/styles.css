@@ -435,6 +435,7 @@
         align-items: center;
         justify-content: center;
     }
+
     .header__link:hover {
         background-color: #fff;
         color: #0b486b;
@@ -442,6 +443,7 @@
         width: 100%;
         border-radius: 0;
     }
+
     .slide {
         margin-top: 0;
         padding-top: 2em;
@@ -577,6 +579,24 @@
         margin: 0;
     }
 
+    .header__link {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__links {
+        background-color: #151c2363;
+    }
+
+    .header__link:hover {
+        background-color: #fff;
+        color: #0b486b;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+
     /*Servicios - inicio*/
     /*Servicios - fin*/
     /*Quienes somos - inicio*/
@@ -699,9 +719,25 @@
         height: 100px;
     }
 
+    .header__link {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
     .header__links {
+        background-color: #151c2363;
         font-size: 1.2em;
     }
+
+    .header__link:hover {
+        background-color: #fff;
+        color: #0b486b;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+
 
     /*Quienes somos - inicio*/
     .section-quienessomos {

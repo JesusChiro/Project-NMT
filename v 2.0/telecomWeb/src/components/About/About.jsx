@@ -5,8 +5,10 @@ export function AboutUs() {
         <>
             <div className="aboutus-container">
                 <h1 className="aboutus-title">Sobre Nosotros</h1>
-                <div className="aboutus-img">
-                    <img src="./img/index/aboutus/image.png" />
+                <div className="aboutus-content-img">
+                    <img className="about-img"
+                        src="./img/index/aboutus/image.png"
+                    />
                 </div>
                 <div className="aboutus-text">
                     <h2 className="aboutus-subtitle">¿Quienes somos?</h2>

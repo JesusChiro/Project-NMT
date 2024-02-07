@@ -202,7 +202,7 @@
 
 /*carrusel de servicios - final*/
 /***/
-@media screen and (min-width: 300px) and (max-width:2024px) {
+@media screen and (min-width: 300px) and (max-width:1024px) {
     #slider {
         top: 250px;
         margin: auto;
@@ -219,11 +219,12 @@
     }
 
     #overflow {
-        width: 100%;
+        width: 90%;
         height: auto;
         padding: 0;
         margin: 0;
-
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .inner {
