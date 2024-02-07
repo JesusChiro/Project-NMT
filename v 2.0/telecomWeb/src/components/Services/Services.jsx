@@ -1,11 +1,8 @@
-import { Footer } from '../Footer/Footer.jsx'
-import { Navbarr } from '../Navbar/Navbar.jsx';
 import { SERVICES } from '../../utils/consts.js';
 import './Services.css'
 export function Services() {
     return (
         <>
-            <Navbarr />
             <div className='Card__container'>
                 {
                     SERVICES.map(({ img, title, text }) => (
@@ -20,7 +17,6 @@ export function Services() {
                     ))
                 }
             </div >
-            <Footer />
         </>
 
     )

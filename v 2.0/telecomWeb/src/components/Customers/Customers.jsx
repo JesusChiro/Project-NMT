@@ -1,12 +1,10 @@
-import { Footer } from "../Footer/Footer.jsx";
-import { Navbarr } from "../Navbar/Navbar.jsx";
+
 import { PROVIDERS, CUSTOMERS } from '../../utils/consts.js'
 
 import './Customers.css'
 export function Customers() {
     return (
         <>
-            <Navbarr />
             <h1 className="title_contain display-4 justify-content-center p-4">NUESTROS CLIENTES</h1>
             <div className="accordion" id="accordionPanelsStayOpenExample">
                 <div className="accordion-item" >
@@ -45,7 +43,6 @@ export function Customers() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

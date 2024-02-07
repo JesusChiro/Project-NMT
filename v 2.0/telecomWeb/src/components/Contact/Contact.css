@@ -31,7 +31,6 @@ form {
 .header-contact>h2,
 .header-contact>p {
     color: #021330;
-    /* text-align: left; */
     padding: 0.5rem;
     font-size: 2em;
     margin: 0;
@@ -110,7 +109,6 @@ form {
 .contact-link-head h2 {
     margin: 0;
     font-size: 2em;
-    /* font-weight: 700; */
 }
 
 .contact-link-card {
@@ -151,9 +149,11 @@ form {
 
 }
 
-.contact-link-text {
+.contact-link-text,
+a {
     font-size: 0.9em;
     font-weight: 700;
+    color: #021330;
     margin: 0;
     padding: 0;
 }

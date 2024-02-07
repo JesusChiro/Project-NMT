@@ -1,7 +1,5 @@
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import { Navbarr } from "../Navbar/Navbar";
-import { Footer } from '../Footer/Footer.jsx';
 import './Contact.css'
 import { CONTACT_US } from '../../utils/consts.js';
 import Button from 'react-bootstrap/Button';
@@ -21,7 +19,6 @@ export const Contact = () => {
     }
     return (
         <>
-            <Navbarr />
             <div className='contact-body'>
                 <form ref={refForm} action="" onSubmit={handleSubmit}>
                     <div className="header-contact">
@@ -70,7 +67,6 @@ export const Contact = () => {
                         ))}
                 </section >
             </div >
-            <Footer />
         </>
     )
 }

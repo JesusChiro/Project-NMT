@@ -1,11 +1,8 @@
-import { Footer } from "../Footer/Footer";
-import { Navbarr } from "../Navbar/Navbar";
 import { NMT_INFO } from "../../utils/consts.js";
 import './About.css'
 export function AboutUs() {
     return (
         <>
-            <Navbarr />
             <div className="aboutus-container">
                 <h1 className="aboutus-title">Sobre Nosotros</h1>
                 <div className="aboutus-img">
@@ -42,7 +39,6 @@ export function AboutUs() {
                     </p>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }
