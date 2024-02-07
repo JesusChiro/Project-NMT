@@ -24,7 +24,7 @@
     margin-bottom: 10px;
     padding: 1em;
     background-color: hsl(226, 62%, 57%);
-    box-shadow: 0 0 25px blue;
+    border-radius: 1em;
 }
 
 .Card:nth-child(even) {
@@ -37,13 +37,14 @@
     margin-bottom: 10px;
     padding: 1em 0;
     background-color: hsl(226, 62%, 57%);
-    box-shadow: 0 0 25px blue;
+    border-radius: 1em;
 }
 
 .Card__img {
+    border-radius: 2em;
     width: 50vw;
     height: auto;
-    padding: 0.5em;
+    padding: 1em;
 }
 
 .Card__body {
@@ -95,31 +96,32 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 280px)and (max-width: 1023px) {
+    .Card__container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
     .Card:nth-child(odd) {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .Card:nth-child(even) {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .Card__img {
         width: 100%;
-        position: relative;
         height: auto;
         border-radius: 2em;
-        padding: 1em;
+        padding: 1%;
     }
 
     .Card__body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
         width: 100%
     }
 
@@ -128,43 +130,10 @@
         padding: 1em;
         height: 5.2em;
         text-overflow: ellipsis;
-        overflow: hidden;
+        overflow: hidden; 
     }
 
     .Card__btn {
-        width: fit-content;
-        border-radius: 25px;
-        background-color: aqua;
-        border-color: transparent;
         margin-top: 1em;
-        font-size: large;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .Card__container {
-        width: 90%;
-        padding: 0;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .Card:nth-child(odd) {
-        padding: 0.5em;
-    }
-
-    .Card:nth-child(even) {
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0.5em;
-    }
-
-    .Card__img {
-        width: 100%;
-        position: relative;
-        height: 300px;
-        border-radius: 10%;
-        border-style: solid;
-        border-bottom: 0.5em;
     }
 }
