@@ -55,9 +55,12 @@
         width: 90%;
         padding: 1em;
     }
+
     .aboutus-title {
+        text-align: center;
         font-size: 3em;
     }
+
     .aboutus-subtitle {
         font-size: 2em;
         padding-left: 0.5em;
@@ -79,9 +82,11 @@
         width: 90%;
         padding: 1em;
     }
+
     .aboutus-title {
         font-size: 2em;
     }
+
     .aboutus-subtitle {
         font-size: 1.5em;
         padding-left: 0.5em;

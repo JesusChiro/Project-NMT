@@ -71,10 +71,10 @@
     .accordion-item {
         width: 90vw;
     }
+
     .accordion-collapse {
         display: flex;
         flex-direction: column;
-
     }
 
     .img__logo {

@@ -307,87 +307,10 @@
 
     .header__link:hover {
         background-color: #fff;
-        color: #151c2363;
+        color: #0b486b;
         height: 100%;
         width: 100%;
-        /* padding: 0;
-        margin: 0; */
-    }
-
-    #slider {
-        top: 250px;
-        margin: auto;
-        width: 700px;
-        height: 932px;
-    }
-
-    #slides {
-        width: 700px;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        z-index: 1;
-    }
-
-    #overflow {
-        width: 100%;
-        height: auto;
-        padding: 0;
-        margin: 0;
-
-    }
-
-    .inner {
-        width: 700px;
-    }
-
-    .slide {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .slide-content {
-        display: flex;
-        flex-direction: column;
-        width: 700px;
-        padding: 0 2em;
-    }
-
-    .slide-text {
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .slide-h1 {
-        font-size: 3.9em;
-    }
-
-    .slide-h2 {
-        font-size: 2em;
-        text-align: left;
-    }
-
-    .slide-p {
-        font-size: 1.5em;
-        text-align: justify;
-    }
-
-    .img-slide-services {
-        width: 30em;
-        margin-top: 2em;
-    }
-
-    #slides .inner {
-        width: 400%;
-        height: auto;
-    }
-
-    #slides .slide {
-        width: 25%;
-        height: 100%;
+        border-radius: 0;
     }
 
     /*Quienes somos - inicio*/
@@ -400,30 +323,32 @@
     .about-nosotros {
         padding: 0;
         margin: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .section-quienessomos {
         width: 100vw;
-        margin: 0;
+        margin: 4em 0;
         padding: 0;
     }
 
     .card-b {
         width: 90vw;
-        max-width: 90vw;
+        max-width: 80vw;
         padding: 20px;
         margin: 1em;
     }
 
     .img-card {
-        height: 350px;
+        height: auto;
     }
 
     .slider {
-        width: 80%;
-        margin: 3em;
-        margin-left: auto;
-        margin-right: auto;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
 
     .card-text {
@@ -477,7 +402,6 @@
     .footer_copyright {
         font-size: 1em;
         padding-bottom: 1em;
-
     }
 }
 
@@ -511,95 +435,40 @@
         align-items: center;
         justify-content: center;
     }
-
+    .header__link:hover {
+        background-color: #fff;
+        color: #0b486b;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
     .slide {
         margin-top: 0;
         padding-top: 2em;
     }
 
     /*Servicios - inicio*/
-    #slides {
-        width: 400px;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #slider {
-        height: auto;
-
-    }
-
-    #overflow {
-        width: 400px;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .slide-content {
-        top: 0;
-        margin-top: 0;
-        padding-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        height: auto;
-    }
-
-    .slide-text {
-        gap: 1em;
-    }
-
-    .slide-h1 {
-        font-size: 30px;
-    }
-
-    .slide-h2 {
-        font-size: 25px;
-    }
-
-    .slide-p {
-        font-size: 15px;
-    }
-
-    .cta {
-        padding: 5px 5px;
-    }
-
-    .cta:hover {
-        font-size: 15px;
-    }
-
-    .slide-img {
-        margin-top: 2em;
-        width: auto;
-        height: auto;
-    }
-
-    .img-slide-services {
-        margin: 0;
-        align-items: center;
-        width: 300px;
-        height: auto;
-        filter: drop-shadow(30px 10px 4px rgba(66, 21, 21, 0.345));
-    }
-
-    #slides .inner {
-        width: 400%;
-        height: 600px;
-    }
 
     /*Servicios - fin*/
     /*Quienes somos - inicio*/
+    .about-nosotros {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
     .section-quienessomos {
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100vw;
+        margin: 1em 0;
+        padding: 0;
     }
 
     .card-b {
-        width: 90vw;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .title__card {
@@ -616,13 +485,23 @@
         font-weight: 300;
     }
 
+    .slider {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     /*Quienes somos - fin*/
     /*clientes - inicio*/
 
     .title-about {
         margin-top: 1em;
         padding-top: 0em;
-        font-size: 2.4em;
+        font-size: 2.2em;
+        text-align: center;
     }
 
     /* Clientes - final */
@@ -699,38 +578,21 @@
     }
 
     /*Servicios - inicio*/
-    #slider {
-        width: auto;
-        height: auto;
-    }
-
-    #slides {
-        width: auto;
-        height: auto;
-    }
-
-    #overflow {
-        width: auto;
-        height: auto;
-    }
-
-    .slide-content {
-        width: auto;
-    }
-
-    .img-slide-services {
-        width: 16em;
-        height: auto;
-    }
-
-    .slide-text {
-        padding: 1em;
-    }
-
     /*Servicios - fin*/
     /*Quienes somos - inicio*/
+    .about-nosotros {
+        display: flex;
+        flex-direction: column;
+    }
+
     .section-quienessomos {
-        width: auto;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-b {
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -739,9 +601,20 @@
         font-size: 2.1em;
     }
 
+    .card-text {
+        font-size: 1em;
+    }
+
     .title-about {
         margin-top: 0.5em;
-        font-size: 2.5em;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .slider {
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /*Quienes somos - fin*/
@@ -799,7 +672,7 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 374px) {
+@media screen and (min-width: 290px) and (max-width: 374px) {
     .allWeb {
         width: 100%;
     }
@@ -830,46 +703,21 @@
         font-size: 1.2em;
     }
 
-    /*Servicios - inicio*/
-    #slider {
-        width: 280px;
-        height: auto;
-    }
-
-    .slide {
-        margin-top: 0;
-        padding: 0;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .inner {
-        width: 280px;
-    }
-
-    .slide-h2 {
-        font-size: 1.3em;
-        text-align: left;
-    }
-
-    .slide-content {
-        width: 90vw;
-        padding: 0;
-    }
-
-    .slide-text {
-        padding: 0.5em;
-    }
-
-    .img-slide-services {
-        width: 180px;
-        height: auto;
-    }
-
-    /*Servicios - fin*/
     /*Quienes somos - inicio*/
     .section-quienessomos {
         gap: 20px;
+    }
+
+    .about-nosotros {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-b {
+        width: 90%;
+        padding: 0.8em;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .title__card {
@@ -880,15 +728,26 @@
         width: 100vw;
     }
 
+    .img-card {
+        height: auto;
+    }
+
     .card-text {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     /*Quienes somos - fin*/
     /*clientes - inicio*/
     .title-about {
         margin-top: 0.5em;
-        font-size: 2.2em;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .slider {
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer {

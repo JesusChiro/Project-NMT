@@ -44,7 +44,8 @@
     flex-direction: column;
     gap: 40px;
     width: 50%;
-    padding-left: 4em;;
+    padding-left: 4em;
+    ;
     padding-right: 25px;
 }
 
@@ -201,3 +202,88 @@
 
 /*carrusel de servicios - final*/
 /***/
+@media screen and (min-width: 300px) and (max-width:2024px) {
+    #slider {
+        top: 250px;
+        margin: auto;
+        width: 100%;
+        height: max-content;
+    }
+
+    #slides {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    }
+
+    #overflow {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .inner {
+        width: 90%;
+    }
+
+    .slide {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .slide-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 2em;
+    }
+
+    .slide-text {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .slide-h1 {
+        font-size: 3em;
+    }
+
+    .slide-h2 {
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .slide-p {
+        font-size: 1.2em;
+        text-align: justify;
+    }
+
+    .slide-img {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .img-slide-services {
+        width: 80%;
+        margin-top: 4em;
+    }
+
+    #slides .inner {
+        width: 400%;
+        height: auto;
+    }
+
+    #slides .slide {
+        width: 25%;
+        height: 100%;
+    }
+
+}
