@@ -3,10 +3,11 @@ import { Home } from './components/Home/Home.jsx'
 import { Contact } from './components/Contact/Contact.jsx'
 import { Services } from './components/Services/Services.jsx'
 import { Customers } from './components/Customers/Customers.jsx'
-import { Page404 } from './components/404.jsx'
-import { Route, Routes } from 'react-router-dom'
+import Page404  from './components/404.jsx'
 import { Navbarr } from './components/Navbar/Navbar.jsx'
 import { Footer } from './components/Footer/Footer.jsx'
+import { Route, Routes } from 'react-router-dom'
+
 
 export function App() {
   return (
