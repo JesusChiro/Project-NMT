@@ -1,37 +1,7 @@
 import './Header.css'
-
-const SLIDERHEADER = [
-    {
-        Title: 'NM TELECOM',
-        Subtitle: 'Sistema CCTV IP',
-        Description: `NMT ofrece vigilancia en vivo y al mejor costo en el área donde ud. desee, almacenando a la vez todos
-        los eventos suscitados.`,
-        Img: './img/index/container/camaxis.png',
-    },
-    {
-        Title: 'NM TELECOM',
-        Subtitle: 'Centrales Telefónicas',
-        Description: `Con la finalidad de ofrecer la comunicacion entre su personal, realizamos la instalacion de sistemas de
-        telefonía IP de reconocidas marcas`,
-        Img: './img/index/container/img-3.png',
-    },
-    {
-        Title: 'NM TELECOM',
-        Subtitle: 'Instalación de Sistema de Radio Enlaces',
-        Description: `Mantén tus diferentes sedes interconectadas sin necesidad de cables con nuestros equipos de largo alcance
-        inalambrico.`,
-        Img: './img/index/container/radioenlaces.png',
-    },
-
-    {
-        Title: 'NM TELECOM',
-        Subtitle: 'Soluciones que Respladan tus Datos',
-        Description: `Ofrecemos las diferentes gamas para la comunicacion de sus
-        equipos mediante Switches, Routers y Access Points.`,
-        Img: './img/index/container/sw.png',
-    },
-]
-
+import { SLIDERHEADER } from '../../../utils/consts'
+import Button from 'react-bootstrap/Button';
+import { NavLink } from 'react-router-dom'
 export function Header() {
     return (
         <>
@@ -53,7 +23,10 @@ export function Header() {
                                                 <h1 className="slide-h1">{Title}</h1>
                                                 <h2 className="slide-h2">{Subtitle}</h2>
                                                 <p className="slide-p">{Description}</p>
-                                                <button className="cta">Conócenos...!</button>
+                                                <NavLink className="" to="/nosotros">
+                                                    <Button variant='primary' className="cta">Conócenos...!</Button>
+                                                </NavLink>
+
                                             </div>
                                             <div className="slide-img">
                                                 <img alt="" className="img-slide-services" src={Img} />

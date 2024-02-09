@@ -1,5 +1,6 @@
 import { SERVICES } from '../../utils/consts.js';
 import './Services.css'
+import Button from 'react-bootstrap/Button';
 export function Services() {
     return (
         <>
@@ -11,7 +12,7 @@ export function Services() {
                             <div className='Card__body'>
                                 <h3 className='Card__title'>{title}</h3>
                                 <p className='Card__text'>{text}</p>
-                                <button className='Card__btn'>Ver Más...</button>
+                                <Button variant='primary' className='Card__btn'>Ver Más...</Button>
                             </div>
                         </div>
                     ))

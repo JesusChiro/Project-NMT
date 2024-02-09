@@ -74,10 +74,12 @@
 .Card__btn {
     width: fit-content;
     border-radius: 25px;
-    background-color: aqua;
+    /* background-color: aqua; */
     border-color: transparent;
-    padding: 1em;
+    padding: 1rem 2em;
     font-size: 1em;
+    border-radius: 12px;
+    font-size: 24px;
 }
 
 @media screen and (max-width:1024px) {
@@ -97,11 +99,12 @@
 }
 
 @media screen and (min-width: 280px)and (max-width: 1023px) {
-    .Card__container{
+    .Card__container {
         margin-left: auto;
         margin-right: auto;
         width: 90%;
     }
+
     .Card:nth-child(odd) {
         display: flex;
         flex-direction: column;
@@ -130,7 +133,7 @@
         padding: 1em;
         height: 5.2em;
         text-overflow: ellipsis;
-        overflow: hidden; 
+        overflow: hidden;
     }
 
     .Card__btn {
