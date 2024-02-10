@@ -28,7 +28,7 @@
 
 .aboutus-p {
     margin: 0 2em;
-    text-align: justify;
+    
     color: azure;
     font-size: 1.2em;
 }
@@ -40,7 +40,7 @@
 
     .aboutus-p {
         margin: 0 2em;
-        text-align: justify;
+        
         color: azure;
         font-size: 1em;
     }
@@ -68,7 +68,6 @@
 
     .aboutus-p {
         margin: 0 0.5em;
-        text-align: justify;
         color: azure;
         font-size: 1em;
     }
@@ -96,7 +95,6 @@
 
     .aboutus-p {
         margin: 0;
-        text-align: justify;
         color: azure;
         font-size: 0.8em;
     }

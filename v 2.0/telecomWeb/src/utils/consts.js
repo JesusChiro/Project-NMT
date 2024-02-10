@@ -150,7 +150,7 @@ export const CONTACT_US = [
         LinkMail: 'mailto:mdamian@nmtelecom.pe?Subject=Solicito%20cotizacion%20del%20servicio%20de',
         Email: 'mdamian@nmtelecom.pe',
         Phone: '954193884',
-        LinkToWsp: 'https://wa.me/+51954193884?text=Hola%Miguel%20mi%20nombre%20es',
+        LinkToWsp: 'https://wa.me/+51954193884?text=Hola%20Miguel%20mi%20nombre%20es',
         IconRRSS: './img/icons/wsp.png',
         AltRRSS: 'Whatsapp NM Telecom'
     },
@@ -164,7 +164,7 @@ export const CONTACT_US = [
         LinkMail: 'mailto:nmunoz@nmtelecom.pe?Subject=Solicito%20cotizacion%20del%20servicio%20de',
         Email: 'nmunoz@nmtelecom.pe',
         Phone: '967761056',
-        LinkToWsp: 'https://wa.me/+51967761056?text=Hola%Nilton%20mi%20nombre%20es',
+        LinkToWsp: 'https://wa.me/+51967761056?text=Hola%20Nilton%20mi%20nombre%20es',
         IconRRSS: './img/icons/wsp.png',
         AltRRSS: 'Whatsapp NM Telecom'
     },
@@ -178,7 +178,7 @@ export const CONTACT_US = [
         LinkMail: 'mailto:dchiroque@nmtelecom.pe?Subject=Solicito%20cotizacion%20del%20servicio%20de',
         Email: 'dchiroque@nmtelecom.pe',
         Phone: '995863645',
-        LinkToWsp: 'https://wa.me/+51995863645?text=Hola%Daniel%20mi%20nombre%20es',
+        LinkToWsp: 'https://wa.me/+51995863645?text=Hola%20Daniel%20mi%20nombre%20es',
         IconRRSS: './img/icons/wsp.png',
         AltRRSS: 'Whatsapp NM Telecom'
     },

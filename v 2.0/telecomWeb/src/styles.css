@@ -32,6 +32,17 @@
 
 }
 
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance
+}
+
+p {
+    text-wrap: pretty;
+}
+
 .justbody {
     padding: 0;
     margin-left: auto;
@@ -148,7 +159,7 @@
 
     .slide-p {
         font-size: 20px;
-        text-align: justify;
+        
     }
 
     .img-slide-services {
@@ -214,7 +225,7 @@
     }
 
     .card-text {
-        text-align: justify;
+        
         font-size: 1.1em;
         font-weight: 200;
     }
