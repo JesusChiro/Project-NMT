@@ -3,6 +3,7 @@ import './Navbar.css'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { NMT_INFO } from '../../utils/consts';
 
 export function Navbarr() {
     return (
@@ -11,7 +12,7 @@ export function Navbarr() {
                 <Container className="header">
                     <Navbar.Brand >
                         <NavLink to="/">
-                            <img className="header__logo" src='./img/logo.png' />
+                            <img alt={NMT_INFO.ALTLOGO} className="header__logo" src={NMT_INFO.LOGO} />
                         </NavLink>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" className='toogle' />
@@ -37,7 +38,6 @@ export function Navbarr() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            
         </>
     )
 }

@@ -12,7 +12,7 @@ export function Footer() {
                     <div className="footer__right">
                         <div className="footer__logo">
                             <a href="./">
-                                <img alt="nmtelecom logo" src="./img/logo.png" />
+                                <img alt={NMT_INFO.ALTLOGO} src={NMT_INFO.LOGO} />
                             </a>
                         </div>
                     </div>

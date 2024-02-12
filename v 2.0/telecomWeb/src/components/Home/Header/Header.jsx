@@ -16,7 +16,7 @@ export function Header() {
                         <div className="inner">
                             {/* <!--contenedor que agrupa los slides en la platilla de slides --> */}
                             {
-                                SLIDERHEADER.map(({ Title, Subtitle, Description, Img }) => (
+                                SLIDERHEADER.map(({ Title, Subtitle, Description, Img, AltSlider }) => (
                                     <div className="slide" key={Img}>
                                         <div className="slide-content">
                                             <div className="slide-text">
@@ -29,7 +29,7 @@ export function Header() {
 
                                             </div>
                                             <div className="slide-img">
-                                                <img alt="" className="img-slide-services" src={Img} />
+                                                <img alt={AltSlider} className="img-slide-services" src={Img} />
                                             </div>
                                         </div>
                                     </div>

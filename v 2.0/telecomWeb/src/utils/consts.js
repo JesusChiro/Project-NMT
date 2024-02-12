@@ -1,7 +1,8 @@
 export const NMT_INFO = {
     NAME: 'NM TELECOM S.A.C',
     DATE_CREATED: 2013,
-
+    LOGO: './img/logo.png',
+    ALTLOGO:'NM Telecom Logo'
 }
 export const SERVICES = [
     {
@@ -184,18 +185,13 @@ export const CONTACT_US = [
     },
 ]
 
-export const RRSS = [
-    { Id: '1', Alt: 'Whatsapp NM Telecom', Src: './img/icons/wsp.png' },
-    { Id: '2', Alt: 'Facebook NM Telecom', Src: './img/icons/facebook.png' }
-]
-
-
 export const SLIDERHEADER = [
     {
         Title: 'NM TELECOM',
         Subtitle: 'Sistema CCTV IP',
         Description: `NMT ofrece vigilancia en vivo y al mejor costo en el área donde ud. desee, almacenando a la vez todos
         los eventos suscitados.`,
+        AltSlider: 'Sistema CCTV - NM TELECOM',
         Img: './img/index/container/camaxis.png',
     },
     {
@@ -203,13 +199,15 @@ export const SLIDERHEADER = [
         Subtitle: 'Centrales Telefónicas',
         Description: `Con la finalidad de ofrecer la comunicacion entre su personal, realizamos la instalacion de sistemas de
         telefonía IP de reconocidas marcas`,
-        Img: './img/index/container/img-3.png',
+        AltSlider: 'Centrales Telefónicas - NM TELECOM',
+        Img: './img/index/container/phone.png',
     },
     {
         Title: 'NM TELECOM',
         Subtitle: 'Instalación de Sistema de Radio Enlaces',
         Description: `Mantén tus diferentes sedes interconectadas sin necesidad de cables con nuestros equipos de largo alcance
         inalambrico.`,
+        AltSlider: 'Radio Enlaces - NM TELECOM',
         Img: './img/index/container/radioenlaces.png',
     },
 
@@ -218,6 +216,7 @@ export const SLIDERHEADER = [
         Subtitle: 'Soluciones que Respladan tus Datos',
         Description: `Ofrecemos las diferentes gamas para la comunicacion de sus
         equipos mediante Switches, Routers y Access Points.`,
+        AltSlider: 'Switch Enlaces - NMT TELECOM',
         Img: './img/index/container/sw.png',
     },
 ]
