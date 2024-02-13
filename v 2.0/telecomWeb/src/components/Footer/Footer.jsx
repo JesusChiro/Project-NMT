@@ -43,7 +43,7 @@ export function Footer() {
                                     <img
                                         alt="facebook telecom"
                                         className="footer__fb"
-                                        src="./img/icons/facebook.png"
+                                        src="./img/icons/facebook.webp"
                                     />
                                 </a>
                             </div>

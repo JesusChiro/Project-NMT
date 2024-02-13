@@ -6,9 +6,14 @@ export function AboutUs() {
             <div className="aboutus-container">
                 <h1 className="aboutus-title">Sobre Nosotros</h1>
                 <div className="aboutus-content-img">
-                    <img className="about-img"
-                        src="./img/index/aboutus/image.png"
-                    />
+                    <amp-img className="about-img"
+                        alt="About us - NM Telecom "
+                        src="./img/index/aboutus/image.webp"
+                    >
+                        <noscript>
+                            <img src="./img/index/aboutus/image.webp" />
+                        </noscript>
+                    </amp-img>
                 </div>
                 <div className="aboutus-text">
                     <h2 className="aboutus-subtitle">¿Quienes somos?</h2>

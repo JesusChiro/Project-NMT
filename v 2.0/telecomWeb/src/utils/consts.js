@@ -1,8 +1,8 @@
 export const NMT_INFO = {
     NAME: 'NM TELECOM S.A.C',
     DATE_CREATED: 2013,
-    LOGO: './img/logo.png',
-    ALTLOGO:'NM Telecom Logo'
+    LOGO: './img/logo.webp',
+    ALTLOGO: 'NM Telecom Logo'
 }
 export const SERVICES = [
     {
@@ -92,49 +92,49 @@ export const ABOUTUS = [
 export const CUSTOMERS = [
     {
         Id: '1',
-        Img: './img/index/customers/csjln.png',
+        Img: './img/index/customers/csjln.webp',
         Alt: 'Cliente de NM TELECOM - Poder Judicial Lima Norte '
     },
     {
         Id: '2',
-        Img: './img/index/customers/incor.png',
+        Img: './img/index/customers/incor.webp',
         Alt: 'Cliente de NM TELECOM - Instituto Nacional Cardiológico'
     },
     {
         Id: '3',
-        Img: './img/index/customers/weir.png',
+        Img: './img/index/customers/weir.webp',
         Alt: 'Cliente de NM TELECOM - Weir Mineral Perú - VULCO Perú'
     }, {
         Id: '4',
-        Img: './img/index/customers/essalud.png',
+        Img: './img/index/customers/essalud.webp',
         Alt: 'Cliente de NM TELECOM - Seguro Social de Salud'
     },
     {
         Id: '5',
-        Img: './img/index/customers/unp.png',
-        Alt: 'Cliente de NM TELECOM - Poder Judicial Lima Norte '
+        Img: './img/index/customers/unp.webp',
+        Alt: 'Cliente de NM TELECOM - Universidad Nacional de Piura '
     },
 ]
 
 export const PROVIDERS = [
     {
         Id: '1',
-        Img: './img/index/proveedores/intcomex.png',
+        Img: './img/index/proveedores/intcomex.webp',
         Alt: 'Proveedor de NM TELECOM - INTCOMEX '
     },
     {
         Id: '2',
-        Img: './img/index/proveedores/sego.png',
+        Img: './img/index/proveedores/sego.webp',
         Alt: 'Proveedor de NM TELECOM - SEGO '
     },
     {
         Id: '3',
-        Img: './img/index/proveedores/anixter.svg',
+        Img: './img/index/proveedores/anixter.webp',
         Alt: 'Proveedor de NM TELECOM - ANIXTER '
     },
     {
         Id: '4',
-        Img: './img/index/proveedores/perfection.svg',
+        Img: './img/index/proveedores/perfection.webp',
         Alt: 'Proveedor de NM TELECOM - Perefection '
     },
 ]
@@ -192,7 +192,7 @@ export const SLIDERHEADER = [
         Description: `NMT ofrece vigilancia en vivo y al mejor costo en el área donde ud. desee, almacenando a la vez todos
         los eventos suscitados.`,
         AltSlider: 'Sistema CCTV - NM TELECOM',
-        Img: './img/index/container/camaxis.png',
+        Img: './img/index/container/camaxis.webp',
     },
     {
         Title: 'NM TELECOM',
@@ -200,7 +200,7 @@ export const SLIDERHEADER = [
         Description: `Con la finalidad de ofrecer la comunicacion entre su personal, realizamos la instalacion de sistemas de
         telefonía IP de reconocidas marcas`,
         AltSlider: 'Centrales Telefónicas - NM TELECOM',
-        Img: './img/index/container/phone.png',
+        Img: './img/index/container/phone.webp',
     },
     {
         Title: 'NM TELECOM',
@@ -208,7 +208,7 @@ export const SLIDERHEADER = [
         Description: `Mantén tus diferentes sedes interconectadas sin necesidad de cables con nuestros equipos de largo alcance
         inalambrico.`,
         AltSlider: 'Radio Enlaces - NM TELECOM',
-        Img: './img/index/container/radioenlaces.png',
+        Img: './img/index/container/radioenlaces.webp',
     },
 
     {
@@ -217,6 +217,6 @@ export const SLIDERHEADER = [
         Description: `Ofrecemos las diferentes gamas para la comunicacion de sus
         equipos mediante Switches, Routers y Access Points.`,
         AltSlider: 'Switch Enlaces - NMT TELECOM',
-        Img: './img/index/container/sw.png',
+        Img: './img/index/container/sw.webp',
     },
 ]
