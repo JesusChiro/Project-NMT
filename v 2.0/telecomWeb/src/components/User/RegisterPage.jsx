@@ -3,7 +3,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useAuth } from '../../context/AuthContext';
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
+
 
 export default function RegisterPage() {
     const {
@@ -52,6 +53,9 @@ export default function RegisterPage() {
                         Registrar
                     </Button>
                 </Form.Group>
+                <p>
+                    Already have an account? <Link to="/login">Log In</Link>
+                </p>
             </Form>
         </div >
     )

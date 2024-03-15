@@ -19,19 +19,19 @@ export function App() {
           <Navbarr />
           <Routes>
             {/* Rutas comunes */}
-            <Route path='/' Component={Home} />
-            <Route path='/nosotros' Component={AboutUs} />
-            <Route path='/contacto' Component={Contact} />
-            <Route path='/soluciones' Component={Services} />
-            <Route path='/clientes' Component={Customers} />
-            <Route path='*' Component={Page404} />
+            <Route path='/' element={<Home />} />
+            <Route path='/nosotros' element={<AboutUs />} />
+            <Route path='/contacto' element={<Contact />} />
+            <Route path='/soluciones' element={<Services />} />
+            <Route path='/clientes' element={<Customers />} />
+            <Route path='*' element={<Page404 />} />
             {/* Corresponde al acceso a la BD */}
-            <Route path='/login' Component={LoginPage} />
-            <Route path='/register' Component={RegisterPage} />
-            <Route path='/tasks' Component={<h1>Tasks Page</h1>} />
-            <Route path='/add-task' Component={<h1>new tasks</h1>} />
-            <Route path='/tasks/:id' Component={<h1>update tasks</h1>} />
-            <Route path='/profile' Component={<h1>profile</h1>} />
+            <Route path='/login' element={<LoginPage />} />
+            <Route path='/register' element={<RegisterPage />} />
+            <Route path='/tasks' element={<h1>Tasks Page</h1>} />
+            <Route path='/add-task' element={<h1>new tasks</h1>} />
+            <Route path='/tasks/:id' element={<h1>update tasks</h1>} />
+            <Route path='/profile' element={<h1>profile</h1>} />
 
           </Routes>
           <Footer />
