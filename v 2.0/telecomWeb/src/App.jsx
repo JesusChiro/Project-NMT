@@ -9,6 +9,10 @@ import { Footer } from './components/Footer/Footer.jsx'
 import LoginPage from './components/User/LoginPage.jsx'
 import RegisterPage from './components/User/RegisterPage.jsx'
 import { Route, Routes } from 'react-router-dom'
+import TasksPage from './components/User/TaskPage.jsx'
+import TasksFormPage from './components/User/TaskFormPage.jsx'
+import ProfilePage from './components/User/ProfilePage.jsx'
+import ProtectedRoute from './ProtectedRoute.jsx'
 
 
 export function App() {
@@ -28,10 +32,13 @@ export function App() {
             {/* Corresponde al acceso a la BD */}
             <Route path='/login' element={<LoginPage />} />
             <Route path='/register' element={<RegisterPage />} />
-            <Route path='/tasks' element={<h1>Tasks Page</h1>} />
-            <Route path='/add-task' element={<h1>new tasks</h1>} />
-            <Route path='/tasks/:id' element={<h1>update tasks</h1>} />
-            <Route path='/profile' element={<h1>profile</h1>} />
+            {/* Rutas Protegidas */}
+            <Route element={<ProtectedRoute />}>
+              <Route path='/tasks' element={<TasksPage />} />
+              <Route path='/add-task' element={<TasksFormPage />} />
+              <Route path='/tasks/:id' element={<TasksFormPage />} />
+              <Route path='/profile' element={<ProfilePage />} />
+            </Route>
 
           </Routes>
           <Footer />
