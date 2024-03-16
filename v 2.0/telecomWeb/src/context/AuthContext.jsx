@@ -43,6 +43,19 @@ export const AuthProvider = ({ children }) => {
             setErrors([error.response.data.message])
         }
     }
+
+    const logout = () => {
+        Cookies.remove('token')
+        setIsAuthenticated(false)
+        setUser(null)
+        // setLoading(false)
+        // setIsAuthenticated(false)
+        // setUser(null)
+
+        // window.location.reload()
+
+    }
+
     // Para desaparecer los mensajes de error en el formulario
     useEffect(() => {
         if (errors.length > 0) {
@@ -84,6 +97,7 @@ export const AuthProvider = ({ children }) => {
         <AuthContext.Provider value={{
             signup,
             signin,
+            logout,
             loading,
             user,
             isAuthenticated,
