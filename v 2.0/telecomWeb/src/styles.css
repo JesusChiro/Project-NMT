@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 * {
@@ -8,7 +9,9 @@
     text-decoration: none !important;
 
 }
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .allWeb {
     background-image: linear-gradient(140deg,
             hsl(240deg 100% 20%) 0%,

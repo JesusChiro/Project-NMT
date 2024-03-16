@@ -8,6 +8,8 @@ import { useAuth } from '../../context/AuthContext'
 
 export function Navbarr() {
     const { isAuthenticated, logout, user } = useAuth()
+
+    console.log(user);
     return (
         <>
             <Navbar expand="lg" className="bg-body-primary">
@@ -39,7 +41,8 @@ export function Navbarr() {
                             {isAuthenticated ? (
                                 <>
                                     <NavLink>
-                                       Welcome  {/* [{data.user.username}] */}
+                                        Welcome  
+                                        {/* {newUser} */}
                                     </NavLink>
                                     <NavLink
                                         className="header__link"

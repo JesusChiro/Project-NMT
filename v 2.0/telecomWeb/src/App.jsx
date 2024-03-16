@@ -20,27 +20,28 @@ export function App() {
     <>
       <div className='allWeb'>
         <div className='justbody'>
-          <Navbarr />
-          <Routes>
-            {/* Rutas comunes */}
-            <Route path='/' element={<Home />} />
-            <Route path='/nosotros' element={<AboutUs />} />
-            <Route path='/contacto' element={<Contact />} />
-            <Route path='/soluciones' element={<Services />} />
-            <Route path='/clientes' element={<Customers />} />
-            <Route path='*' element={<Page404 />} />
-            {/* Corresponde al acceso a la BD */}
-            <Route path='/login' element={<LoginPage />} />
-            <Route path='/register' element={<RegisterPage />} />
-            {/* Rutas Protegidas */}
-            <Route element={<ProtectedRoute />}>
-              <Route path='/tasks' element={<TasksPage />} />
-              <Route path='/add-task' element={<TasksFormPage />} />
-              <Route path='/tasks/:id' element={<TasksFormPage />} />
-              <Route path='/profile' element={<ProfilePage />} />
-            </Route>
-
-          </Routes>
+          <main className='container mx-auto px-10'>
+            <Navbarr />
+            <Routes>
+              {/* Rutas comunes */}
+              <Route path='/' element={<Home />} />
+              <Route path='/nosotros' element={<AboutUs />} />
+              <Route path='/contacto' element={<Contact />} />
+              <Route path='/soluciones' element={<Services />} />
+              <Route path='/clientes' element={<Customers />} />
+              <Route path='*' element={<Page404 />} />
+              {/* Corresponde al acceso a la BD */}
+              <Route path='/login' element={<LoginPage />} />
+              <Route path='/register' element={<RegisterPage />} />
+              {/* Rutas Protegidas */}
+              <Route element={<ProtectedRoute />}>
+                <Route path='/tasks' element={<TasksPage />} />
+                <Route path='/add-task' element={<TasksFormPage />} />
+                <Route path='/tasks/:id' element={<TasksFormPage />} />
+                <Route path='/profile' element={<ProfilePage />} />
+              </Route>
+            </Routes>
+          </main>
           <Footer />
         </div>
       </div>

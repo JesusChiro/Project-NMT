@@ -48,12 +48,6 @@ export const AuthProvider = ({ children }) => {
         Cookies.remove('token')
         setIsAuthenticated(false)
         setUser(null)
-        // setLoading(false)
-        // setIsAuthenticated(false)
-        // setUser(null)
-
-        // window.location.reload()
-
     }
 
     // Para desaparecer los mensajes de error en el formulario
