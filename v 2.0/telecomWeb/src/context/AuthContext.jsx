@@ -45,9 +45,10 @@ export const AuthProvider = ({ children }) => {
     }
 
     const logout = () => {
-        Cookies.remove('token')
+        Cookies.remove('token', { path: '' })
         setIsAuthenticated(false)
         setUser(null)
+
     }
 
     // Para desaparecer los mensajes de error en el formulario

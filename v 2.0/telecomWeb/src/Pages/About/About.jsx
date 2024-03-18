@@ -1,4 +1,4 @@
-import { NMT_INFO } from "../../utils/consts.js";
+import { NMT_INFO } from '../../utils/consts'
 import './About.css'
 export function AboutUs() {
     return (

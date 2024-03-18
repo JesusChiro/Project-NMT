@@ -13,20 +13,7 @@
 @tailwind components;
 @tailwind utilities;
 .allWeb {
-    background-image: linear-gradient(140deg,
-            hsl(240deg 100% 20%) 0%,
-            hsl(243deg 82% 31%) 18%,
-            hsl(241deg 71% 44%) 26%,
-            hsl(239deg 88% 57%) 33%,
-            hsl(212deg 100% 50%) 39%,
-            hsl(199deg 100% 44%) 44%,
-            hsl(186deg 54% 48%) 50%,
-            hsl(182deg 61% 49%) 56%,
-            hsl(177deg 69% 53%) 61%,
-            hsl(172deg 84% 60%) 67%,
-            hsl(166deg 67% 60%) 74%,
-            hsl(157deg 51% 59%) 82%,
-            hsl(147deg 37% 57%) 100%);
+    background: #4AC7F1;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -64,42 +51,6 @@ p {
     .justbody {
         width: auto;
         max-width: auto;
-    }
-
-    .header {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2em;
-        width: 100%;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-
-    .header__logo {
-        width: 200px;
-        height: 150px;
-        /* padding-left: 10%; */
-    }
-
-    .header__links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: solid;
-        font-size: 24px;
-        padding-left: 5%;
-        margin: 0;
-        width: fit-content;
-    }
-
-    .header__link {
-        text-decoration: none;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bolder;
-        color: white;
-        padding: 10px 25px;
-        margin: 0;
-        cursor: pointer;
     }
 
     #slider {
@@ -292,41 +243,6 @@ p {
         max-width: auto;
     }
 
-    .header {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 4em;
-        width: 80vw;
-        margin-bottom: 1em;
-    }
-
-    .header__logo {
-        width: 200px;
-        height: 150px;
-        padding-left: 0%
-    }
-
-    .header__links {
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        background-color: #151c2363;
-        width: 100%;
-    }
-
-    .header__link {
-        width: 100%;
-    }
-
-    .header__link:hover {
-        background-color: #fff;
-        color: #0b486b;
-        height: 100%;
-        width: 100%;
-        border-radius: 0;
-    }
-
     /*Quienes somos - inicio*/
     .title-about {
         margin-bottom: 0;
@@ -427,35 +343,6 @@ p {
     .justbody {
         width: 100%;
         max-width: 100%;
-    }
-
-    .header {
-        width: 90%;
-        padding: 0;
-        margin-bottom: 1em;
-    }
-
-    .header__links {
-        width: 100%;
-        padding: 0;
-        font-size: 1.5em;
-        align-items: center;
-        justify-content: center;
-        background-color: #151c2363;
-    }
-
-    .header__link {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header__link:hover {
-        background-color: #fff;
-        color: #0b486b;
-        height: 100%;
-        width: 100%;
-        border-radius: 0;
     }
 
     .slide {
@@ -583,16 +470,6 @@ p {
         width: 100%;
         max-width: 100%;
     }
-
-    .header {
-        width: 92%;
-        padding: 0;
-    }
-
-    .nav {
-        margin: 0;
-    }
-
     .header__link {
         width: 100%;
         align-items: center;
@@ -714,44 +591,6 @@ p {
     .justbody {
         width: 100%
     }
-
-    .header {
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 0;
-    }
-
-    .nav {
-        padding: 0;
-    }
-
-    .header__logo {
-        width: 130px;
-        height: 100px;
-    }
-
-    .header__link {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header__links {
-        background-color: #151c2363;
-        font-size: 1.2em;
-    }
-
-    .header__link:hover {
-        background-color: #fff;
-        color: #0b486b;
-        height: 100%;
-        width: 100%;
-        border-radius: 0;
-    }
-
 
     /*Quienes somos - inicio*/
     .section-quienessomos {
