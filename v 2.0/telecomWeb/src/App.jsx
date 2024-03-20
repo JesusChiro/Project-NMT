@@ -20,8 +20,9 @@ export function App() {
     <>
       <div className='allWeb'>
         <div className='justbody'>
-          <main className='container mx-auto px-10'>
+          
             <Navbarr />
+            <main className='container mx-auto px-10'>
             <Routes>
               {/* Rutas comunes */}
               <Route path='/' element={<Home />} />

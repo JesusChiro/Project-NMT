@@ -2,9 +2,6 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import './Contact.css'
 import { CONTACT_US } from '../../utils/consts.js';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-
 
 export const Contact = () => {
     const refForm = useRef();
@@ -19,57 +16,79 @@ export const Contact = () => {
     }
     return (
         <>
-            <div className='contact-body'>
-                <form ref={refForm} action="" onSubmit={handleSubmit}>
-                    <div className="header-contact">
-                        <h2>Contáctanos</h2>
-                        <p>Por favor, rellena el formulario</p>
-                    </div>
-                    <fieldset className='field-name'>
-                        <label className="symbol-required name" htmlFor=''>Nombres Completos:</label>
-                        <Form.Control name='username' type="text" placeholder='Ej: Juan Perez' required />
-                    </fieldset>
-                    <fieldset className='field-email'>
-                        <label className="symbol-required name" name='email'>Email:</label>
-                        <Form.Control type="email" placeholder="Enter email" name='email' id='email' required />
-                    </fieldset>
-                    <fieldset className='field-message'>
-                        <label className="symbol-required name" htmlFor=''>Mensaje:</label>
-                        <Form.Control maxLength='500' placeholder='Soy Juan Perez de la empresa... y deseo información 
-                        sobre...' name='message' as="textarea" rows={3} required />
-                    </fieldset>
-                    <Button variant='primary' className='btn-send' type="submit">Send</Button>
-                </form>
-                <section className='contact-links'>
-                    <div className="contact-link-head">
-                        <h2>Contacto Directo</h2>
-                    </div>
-
-                    {
-                        CONTACT_US.map(({ Id, Work, AltWork, IconWork, Name, LinkMail, Email, Phone, LinkToWsp }) => (
-                            <div className="contact-link-card border-secondary shadow rounded-4" key={Id}>
-                                <section>
-                                    <h2 className="contact-link-title">{Work}</h2>
-                                </section>
-                                <div className='contact-link-body'>
-                                    <section className='contact-link-left'>
-                                        <img alt={AltWork} className="contact-link-img" src={IconWork} />
-                                    </section>
-                                    <aside className="contact-link-right">
-                                        <p className="contact-link-text">👨‍💻{Name}</p>
-                                        <p className="contact-link-text">
-                                            <a href={LinkMail}>✉ {Email}</a>
-                                        </p>
-                                        <a href={LinkToWsp}>
-                                            <div className='contact-link-wsp'>
-                                                <p className="contact-link-text">📱{Phone}</p>
+            <div
+                className='flex-col justify-center sm:flex-col lg:flex-row my-10 mx-auto flex'>
+                <div className='mx-5 p-0 lg:w-1/2'>
+                    <form
+                        ref={refForm}
+                        action=""
+                        onSubmit={handleSubmit}
+                        className='bg-white px-5 lg:shadow-md rounded px-8 pt-6 pb-8 mx-auto'>
+                        <h2 className=' items-center text-center text-4xl font-extrabold dark:text-white'>Contáctanos</h2>
+                        <p className='text-lg font-normal text-gray-500 mt-1 lg:text-xl dark:text-gray-400'>Por favor, rellena el formulario</p>
+                        <fieldset
+                            className='py-2'>
+                            <label
+                                className="block text-gray-700 text-sm font-bold mb-2"
+                                htmlFor=''>Nombres Completos:</label>
+                            <input
+                                className='bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500'
+                                name='username' type="text" placeholder='Ej: Juan Perez' required />
+                        </fieldset>
+                        <fieldset
+                            className='py-2'>
+                            <label
+                                className="block text-gray-700 text-sm font-bold mb-2"
+                                name='email'>Email:</label>
+                            <input
+                                className='bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500'
+                                type="email" placeholder="Enter email" name='email' id='email' required />
+                        </fieldset>
+                        <fieldset
+                            className='py-2'>
+                            <label
+                                className="block text-gray-700 text-sm font-bold mb-2"
+                                htmlFor=''>Mensaje:</label>
+                            <textarea
+                                className='bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500'
+                                maxLength='500' placeholder='Soy Juan Perez de la empresa... y deseo información sobre...'
+                                name='message' rows={3} required />
+                        </fieldset>
+                        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' type="submit">Send</button>
+                    </form>
+                </div>
+                <div className=' mx-5 p-0 lg:w-1/2'>
+                    <section className='bg-white px-2 lg:w-3/4 shadow-md rounded px-8 pt-6 pb-8 m-2 flex place-content-center flex-col mx-auto'>
+                        <div className="text-center font-bold text-2xl">
+                            <h2 className='items-center  font-extrabold dark:text-white text-2xl lg:text-4xl'>Contacto Directo</h2>
+                        </div>
+                        {
+                            CONTACT_US.map(({ Id, Work, AltWork, IconWork, Name, LinkMail, Email, Phone, LinkToWsp }) => (
+                                <div className="flex place-content-center" key={Id}>
+                                    <ul role="list" className="divide-y divide-gray-200 dark:divide-gray-700 ">
+                                        <li className=" py-3 sm:py-4 ">
+                                            <div className="flex items-center">
+                                                <div className="flex-shrink-0">
+                                                    <img className="w-10 h-10 rounded" src={IconWork} alt={AltWork} />
+                                                </div>
+                                                <div className="flex-1 min-w-0 ms-4">
+                                                    <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                                        👨‍💻{Name}
+                                                    </p>
+                                                    <p className="text-sm font-medium text-gray-500 truncate dark:text-gray-400">
+                                                        <a href={LinkMail}>✉ {Email}</a>
+                                                    </p>
+                                                    <p className="text-sm font-medium text-gray-500 truncate dark:text-gray-400">
+                                                        {Work}
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </a>
-                                    </aside>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                        ))}
-                </section >
+                            ))}
+                    </section >
+                </div>
             </div >
         </>
     )
