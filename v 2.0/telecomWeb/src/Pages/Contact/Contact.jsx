@@ -1,6 +1,5 @@
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import './Contact.css'
 import { CONTACT_US } from '../../utils/consts.js';
 
 export const Contact = () => {
