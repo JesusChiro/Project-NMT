@@ -22,7 +22,7 @@ export function App() {
         <div className='justbody'>
           
             <Navbarr />
-            <main className='container mx-auto px-10'>
+            <main className='px-3 sm:container mx-auto px-10 '>
             <Routes>
               {/* Rutas comunes */}
               <Route path='/' element={<Home />} />

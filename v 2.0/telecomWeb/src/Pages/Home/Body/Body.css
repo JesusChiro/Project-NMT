@@ -1,66 +1,4 @@
 /***/
-/*Quienes somos - inicio*/
-.section-quienessomos {
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: center;
-    align-content: center;
-    padding: 25px;
-    gap: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.about-nosotros {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card-b {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    max-width: 400px;
-    padding: 20px;
-}
-
-.img-card {
-    height: 250px;
-}
-
-.title-about {
-    margin-bottom: 50px;
-    border-style: 20px;
-    font-size: 4rem;
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 700;
-    text-shadow: #b7dafb;
-}
-
-.title__card {
-    color: white;
-    text-align: center;
-    font-size: 44px;
-    padding-top: 30px;
-    text-shadow: 2px 2px 3px white;
-}
-
-.card-text {
-    text-align: justify;
-    font-size: 24px;
-    font-weight: 400;
-    color: white;
-}
-
-/*Quienes somos - final*/
-/***/
-/***/
 /*carrusel de clientes - inicio*/
 .slider {
     width: 80%;
@@ -88,13 +26,6 @@
     width: 194px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.img-cus {
-    width: 194px;
-    height: auto;
-    overflow-clip-margin: content-box;
-    overflow: clip;
 }
 
 @keyframes scroll {
