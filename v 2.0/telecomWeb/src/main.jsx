@@ -5,12 +5,15 @@ import './styles.css'
 import { BrowserRouter } from "react-router-dom";
 import { AuthProvider } from './context/AuthContext.jsx'
 import { TaskProvider } from "./context/TasksContext.jsx";
+import { NextUIProvider } from "@nextui-org/react";
 
 ReactDOM.render(
   <AuthProvider>
     <TaskProvider>
       <BrowserRouter>
-        <App />
+        <NextUIProvider>
+          <App />
+        </NextUIProvider>
       </BrowserRouter>
     </TaskProvider>
   </AuthProvider >,
