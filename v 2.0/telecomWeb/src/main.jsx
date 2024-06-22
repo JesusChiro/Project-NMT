@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom";
 import { createRoot } from 'react-dom/client';
 import { App } from './App.jsx'
 import './styles.css'
@@ -7,7 +6,11 @@ import { AuthProvider } from './context/AuthContext.jsx'
 import { TaskProvider } from "./context/TasksContext.jsx";
 import { NextUIProvider } from "@nextui-org/react";
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
+// root.render(<App tab="home" />);
+
+root.render(
   <AuthProvider>
     <TaskProvider>
       <BrowserRouter>
@@ -16,6 +19,5 @@ ReactDOM.render(
         </NextUIProvider>
       </BrowserRouter>
     </TaskProvider>
-  </AuthProvider >,
-  document.getElementById('root')
+  </AuthProvider >
 )
